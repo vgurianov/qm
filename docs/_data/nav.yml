@@ -1,0 +1,29 @@
+toc:
+  - title: 1. Simulation model
+    subfolderitems:
+      - page: Use-Case Model
+        url: /srt/use-case.html
+      - page: Analysis Model
+        url: /srt/analysis_model.html
+      - page: Design Model
+        url: /srt/design.html
+  - title: 2. Package API
+    subfolderitems:
+      - page: Package Overview  
+        url: /srt/overview.html
+      - page: pymms.mms module
+        url: /srt/mms.html
+      - page: pymms.resacher_instruments module
+        url: /srt/resacher_instruments.html
+      - page: pymms.print_results and pymms.drawing modules
+        url: /srt/print_result.html
+  - title: 3. Experiments
+    subfolderitems:
+      - page: Getting Started
+        url: /srt/started.html
+      - page: The time dilation
+        url: /srt/experiment1.html
+      - page: Velosity and energy as function of momentum
+        url: /srt/experiment2.html
+      - page: Inertial reference frame 
+        url: /srt/experiment3.html
