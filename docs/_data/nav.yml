@@ -21,9 +21,9 @@ toc:
     subfolderitems:
       - page: Getting Started
         url: /srt/started.html
-      - page: Split
+      - page: Slits
         url: /qm/slits.html
-      - page: Velosity and energy as function of momentum
-        url: /srt/experiment2.html
+      - page: Formula
+        url: /qm/p.html
       - page: Inertial reference frame 
         url: /srt/experiment3.html
