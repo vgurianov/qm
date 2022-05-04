@@ -10,7 +10,7 @@ toc:
   - title: 2. Main quantum effects
     subfolderitems:
       - page:  Double-path experiment  
-        url: /srt/overview.html
+        url: /qm/slits.html
       - page: Uncertainty principle
         url: /srt/mms.html
       - page: Entanglement
@@ -21,9 +21,3 @@ toc:
     subfolderitems:
       - page: Formula
         url: /qm/p.html
-      - page: Split
-        url: /qm/slits.html
-      - page: Velosity and energy as function of momentum
-        url: /srt/experiment2.html
-      - page: Inertial reference frame 
-        url: /srt/experiment3.html
