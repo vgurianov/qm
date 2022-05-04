@@ -18,3 +18,9 @@ We write integrals using $\int$ and fractions using $\frac{a}{b}$. Limits are pl
 Lower case Greek letters are written as $\omega$ $\delta$ etc. while upper case Greek letters are written as $\Omega$ $\Delta$.
 
 Mathematical operators are prefixed with a backslash as $\sin(\beta)$, $\cos(\alpha)$, $\log(x)$ etc.
+
+A quantum superposition of the "basis states"  
+\begin{equation}
+ |\psi\rangle = c_1|0\rangle   + c_2|1\rangle ,
+\end{equation}
+here $$|0\rangle$$ and $$|1\rangle$$ are the Dirac notation for the quantum state that will always give the result 0 or 1 when make a measurement.
