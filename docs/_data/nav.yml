@@ -1,29 +1,28 @@
 toc:
-  - title: 1. Simulation model
-    subfolderitems:
-      - page: Use-Case Model
+  - title: 1. Key ponts:
+      - page: Wave function
         url: /srt/use-case.html
-      - page: Analysis Model
+      - page: Wave function collapse
         url: /srt/analysis_model.html
-      - page: Design Model
+      - page:  Superposition
         url: /srt/design.html
-  - title: 2. Package API
+  - title: 2. Main quantum effects
     subfolderitems:
-      - page: Package Overview  
+      - page:  Double-path experiment  
         url: /srt/overview.html
-      - page: pymms.mms module
+      - page: Uncertainty principle
         url: /srt/mms.html
-      - page: pymms.resacher_instruments module
+      - page: Entanglement
         url: /srt/resacher_instruments.html
-      - page: pymms.print_results and pymms.drawing modules
+      - page: Bell’s test
         url: /srt/print_result.html
-  - title: 3. Experiments
+  - title: 3. Other quantum models
     subfolderitems:
-      - page: Getting Started
-        url: /srt/started.html
-      - page: Slits
-        url: /qm/slits.html
       - page: Formula
         url: /qm/p.html
+      - page: Split
+        url: /qm/slits.html
+      - page: Velosity and energy as function of momentum
+        url: /srt/experiment2.html
       - page: Inertial reference frame 
         url: /srt/experiment3.html
