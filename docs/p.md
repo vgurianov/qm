@@ -6,10 +6,12 @@ In natural units ($$c = 1$$), the formula expresses the identity
 \begin{equation}
 E=m
 \end{equation}
-Subscripts in math mode are written as $$a_b$$ and superscripts are written as $$a^b$$. These can be combined an nested to write expressions such as
+Subscripts in math mode are written as $$a_b$$ and superscripts are written as $$a^b$$. These can be combined an nested to write expressions such as  
+
 \begin{equation}
  T^{i_1 i_2 \dots i_p}_{j_1 j_2 \dots j_q} = T(x^{i_1},\dots,x^{i_p},e_{j_1},\dots,e_{j_q})
-\end{equation}
+\end{equation}  
+
 We write integrals using $\int$ and fractions using $$\frac{a}{b}$$. Limits are placed on integrals using superscripts and subscripts:
 \begin{equation}
 \int_0^1 \frac{dx}{e^x} =  \frac{e-1}{e}
@@ -24,14 +26,7 @@ A quantum superposition of the "basis states"
 \end{equation}
 here $$|0\rangle$$ and $$|1\rangle$$ are the Dirac notation for the quantum state that will always give the result 0 or 1 when make a measurement.
 
-\ref{fig:fig7}.
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.5\textwidth]{qbit}
-	\caption{The Bell's test model}
-	\label{fig:fig7}
-\end{figure}
-----
+
 <p><img src="qbit.png" alt="" /></p>
 Figure 1: A general structure UML2 SP <br/>
 ----
