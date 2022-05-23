@@ -9,7 +9,7 @@ E=m
 Subscripts in math mode are written as $$a_b$$ and superscripts are written as $$a^b$$. These can be combined an nested to write expressions such as  
 
 \begin{equation}
- T^{i_1 i_2 \dots i_p}_{j_1 j_2 \dots j_q} = T(x^{i_1},\dots,x^{i_p},e_{j_1},\dots,e_{j_q})
+ T^{i_1 i_2 \dots i_p}{j_1 j_2 \dots j_q} = T(x^{i_1},\dots,x^{i_p},e_{j_1},\dots,e_{j_q})
 \end{equation}  
 
 We write integrals using $\int$ and fractions using $$\frac{a}{b}$$. Limits are placed on integrals using superscripts and subscripts:
