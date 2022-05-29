@@ -36,10 +36,9 @@ Figure 1: A general structure UML2 SP <br/>
   
   
   
-  Experiment result is depicted in table 2
+Experiment result is depicted in table 2
    
-	№ | $AB$ | $BC$  |  $AC$ |$N[A^+,B^+]$ | $N[B^-,C^-]+N[A^+,C^+]$ 
+	№ | $$AB$$ | $$BC$$  |  $$AC$$ |$$N[A^+,B^+]$$ | $$N[B^-,C^-]+N[A^+,C^+]$$ 
 	- | ---- | ------| ------ |-------- |  -------
-	1 | 240° | 60° | 300° | 15 | 11  
-	2 | 240° | 60° | 300° | 15 | 11  
- 
+	1 | 240° |   60° |   300° |      15 |       11  
+	2 | 240° |   60° |   300° |      15 |       11 
