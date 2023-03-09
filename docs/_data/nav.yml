@@ -1,23 +1,36 @@
 toc:
-  - title: 1. Key ponts
-    subfolderitems:
+  - title: 1. Key ponts:
       - page: Wave function
-        url: /srt/use-case.html
-      - page: Wave function collapse
-        url: /srt/analysis_model.html
+        url: /qm/Wave_function.html
       - page:  Superposition
-        url: /srt/design.html
+        url: /qm/Superposition.html
   - title: 2. Main quantum effects
     subfolderitems:
-      - page:  Double-path experiment  
+      - page:  Double-slit experiment
         url: /qm/slits.html
       - page: Uncertainty principle
-        url: /srt/mms.html
+        url: /qm/uncertainty_principle.html
       - page: Entanglement
-        url: /srt/resacher_instruments.html
+        url: /qm/entanglement.html
       - page: Bell’s test
-        url: /srt/print_result.html
+        url: /qm/bell.html
   - title: 3. Other quantum models
     subfolderitems:
       - page: Formula
         url: /qm/p.html
+      - page: Rutherford scattering I
+        url: /qm/scattering1.html
+      - page: Rutherford scattering II
+        url: /qm/scattering2.html
+      - page: Spin
+        url: /qm/spin.html
+      - page: Non-numerical models
+        url: /qm/non-numerical.html
+      - page: Resume
+        url: /qm/resume.html
+  - title: Appendix
+    subfolderitems:
+      - page: Complex nambers
+        url: /qm/complex_numbers.html
+      - page: Fiber bundle
+        url: /qm/fiber_bundle.html
