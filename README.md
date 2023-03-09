@@ -1,6 +1,4 @@
-# qm
- Ontologies in Quantum Mechanics
-
+# Ontologies in Quantum Mechanics
  in progress ...
 
 This resource contains additional materials to work
