@@ -32,5 +32,5 @@ toc:
     subfolderitems:
       - page: Complex nambers
         url: /qm/complex_numbers.html
-      - page: Fiber bundle
+      - page: Metamodeling in Python
         url: /qm/fiber_bundle.html
