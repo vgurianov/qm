@@ -16,7 +16,7 @@ toc:
         url: /qm/bell.html
   - title: 3. Other quantum models
     subfolderitems:
-      - page: Formula
+      - page: Formula1
         url: /qm/p.html
       - page: Rutherford scattering I
         url: /qm/scattering1.html
