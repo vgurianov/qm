@@ -17,4 +17,5 @@ Quantum effects may be described as follows.
  Following the tradition of programming languages such as Smalltalk and Python, we will treat both the classes themselves and class instances as objects. We will rely on the interpretation of quantum mechanics was proposed by Werner Heisenberg (Fock, R.Harre). Class instances will be interpreted as objects of reality in the classical sense, and classes will be interpreted as objects that exist in possibility.
 
  ## 3. Annotation of the site
+ text
  
