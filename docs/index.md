@@ -8,7 +8,7 @@ Quantum effects may be described as follows.
 
  * Wave function analog is a class.
  * Wave function collapse analog is to run constructor of the class and create an object, i.e. instance of the class.
- * Superposition analog is multiple inheritances. If the classes have attributes or operations with an identical name then multiple inheritances have a conflict of the names. In this conflict, we will resolve the "quantum rule", i.e. to use an amplitude of wave function.  
+ * Quantum superposition analog is multiple inheritances. If the classes have attributes or operations with an identical name then multiple inheritances have a conflict of the names. In this conflict, we will resolve the "quantum rule", i.e. to use an amplitude of wave function.  
 
  ## 2. Simulation language  
 
@@ -17,3 +17,4 @@ Quantum effects may be described as follows.
  Following the tradition of programming languages such as Smalltalk and Python, we will treat both the classes themselves and class instances as objects. We will rely on the interpretation of quantum mechanics was proposed by Werner Heisenberg (Fock, R.Harre). Class instances will be interpreted as objects of reality in the classical sense, and classes will be interpreted as objects that exist in possibility.
 
  ## 3. Annotation of the site
+ 
