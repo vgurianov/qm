@@ -1,5 +1,6 @@
 toc:
   - title: 1. Key ponts:
+    subfolderitems:
       - page: Wave function
         url: /qm/Wave_function.html
       - page:  Superposition
