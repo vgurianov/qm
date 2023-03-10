@@ -7,30 +7,30 @@ toc:
   - title: 2. Main quantum effects
     subfolderitems:
       - page:  Double-slit experiment
-        url: /qm/slits.html
+        url: /qm/sorry.html
       - page: Uncertainty principle
-        url: /qm/uncertainty_principle.html
+        url: /qm/sorry.html
       - page: Entanglement
-        url: /qm/entanglement.html
+        url: /qm/sorry.html
       - page: Bell’s test
-        url: /qm/bell.html
+        url: /qm/sorry.html
   - title: 3. Other quantum models
     subfolderitems:
       - page: Formula1
         url: /qm/p.html
       - page: Rutherford scattering I
-        url: /qm/scattering1.html
+        url: /qm/sorry.html
       - page: Rutherford scattering II
-        url: /qm/scattering2.html
+        url: /qm/sorry.html
       - page: Spin
-        url: /qm/spin.html
+        url: /qm/sorry.html
       - page: Non-numerical models
-        url: /qm/non-numerical.html
+        url: /qm/sorry.html
       - page: Resume
-        url: /qm/resume.html
+        url: /qm/sorry.html
   - title: Appendix
     subfolderitems:
       - page: Complex nambers
-        url: /qm/complex_numbers.html
+        url: /qm/sorry.html
       - page: Metamodeling in Python
-        url: /qm/fiber_bundle.html
+        url: /qm/sorry.html
