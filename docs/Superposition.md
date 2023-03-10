@@ -22,4 +22,4 @@
 ```
 Note that in Python, the name conflict is resolved simply - the value of the attribute of the first class in the inheritance list is assigned. We are redefining this rule. It is also worth noting that in this case we are assigning a value to an attribute of an object, not a class.  
 
-The complete code is here [states.py](https://github.com/vgurianov/qm/software/states.py).
+The complete code is here [https://github.com/vgurianov/qm/software/states.py](https://github.com/vgurianov/qm/blob/master/software/states.py).
