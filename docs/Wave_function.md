@@ -14,4 +14,4 @@ The measurement procedure is shown in Fig.2
 Figure 2: The wavefunction collapse  
 
 
-The measurement results with the collapse of the wave function will be various. However, the measurement results after the collapse will be unchanged. If we now repeat the measurement, we will always get the same value of the measured property.
+The measurement results upon collapse of the wave function can vary, but the outcome after collapse will remain the same. If we were to repeat the measurement, we would obtain the same value every time for the measured property.
