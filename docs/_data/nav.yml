@@ -4,7 +4,7 @@ toc:
       - page: Wave function
         url: /qm/Wave_function.html
       - page:  Superposition
-        url: /qm/sorry.html
+        url: /qm/Superposition.html
   - title: 2. Main quantum effects
     subfolderitems:
       - page:  Double-slit experiment
