@@ -1,5 +1,6 @@
 # Ontological description of quantum mechanics
-This resource contains software for the work [Gurianov, V.I. (2023). Simulation of Certain Quantum Effects. Cambridge Open Engage. doi:10.33774/coe-2023-v5sc8 This content is a preprint and has not been peer-reviewed.](https://www.cambridge.org/engage/coe/article-details/6401b76a37e01856dc125cda). The software implemented in Python 3.    
+This resource contains software for the work [Gurianov, V.I. (2023). Simulation of Certain Quantum Effects. Cambridge Open Engage. doi:10.33774/coe-2023-v5sc8 ](https://www.cambridge.org/engage/coe/article-details/6401b76a37e01856dc125cda).This content is a preprint and has not been peer-reviewed.    
+The software implemented in Python 3.    
 
 
 
