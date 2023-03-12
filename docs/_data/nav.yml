@@ -23,7 +23,9 @@ toc:
         url: /qm/sorry.html
       - page: Rutherford scattering II
         url: /qm/sorry.html
-      - page: Spin
+      - page: SpinTuring machine
+        url: /qm/sorry.html
+      - page: Turing machine
         url: /qm/sorry.html
       - page: Non-numerical models
         url: /qm/sorry.html
