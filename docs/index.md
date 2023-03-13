@@ -14,7 +14,7 @@ To describe scientific models, we will use the language of object-oriented simul
 
 
 ## 3. Site Overview
-In sections "1.Key points" and "2. Main quantum effects", we an extended description of the quantum effects is given, documentation for the software is presented, and experimental results are presented. The simulation software is implemented in Python 3.  
+In sections "1.Key points" and "2. Main quantum effects", an extended description of the quantum effects is given, documentation for the software is presented, and experimental results are presented. The simulation software is implemented in Python 3.  
 
 The resource also discusses some additional issues of quantum theory in section "3. Other quantum models".  
 
