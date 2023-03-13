@@ -24,4 +24,4 @@ R.Feynman showed that a classical Turing machine would not be able to simulate a
 
 In subsection  "Non-numerical model" is proposed and considered model without complex numbers. An ordered pair of looped lists is used to eliminate complex numbers. The main processes with this data structure are defined. Based on this construction, a Hilbert’s space model is constructed. A model for the collapse of the wave function is proposed. The processes that are described by the time-independent and time-dependent Schrodinger equations are considered.The problem of space
 and time in quantum mechanics is considered.  
-This model gives an idea of what a more detailed quantum mechanics model might look like. In particular, this model answers the question "What happens in the quantum world when we do not observe it?"
+This model gives an idea of what a more detailed quantum mechanics model might look like. In particular, this model answers the question "What happens in the quantum world when we do not observe it?". Note that when creating this model, a number of assumptions were made that require serious justification.
