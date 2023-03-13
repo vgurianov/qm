@@ -1,5 +1,4 @@
-﻿# -*- coding: utf-8 -*-
-# states superposition, OK
+# states superposition
 
 import math
 import random
@@ -7,8 +6,6 @@ import matplotlib.pyplot as plt
 from scipy import stats
 
 
-# https://eslitak.livejournal.com/238033.html
-# http://quantmagic.narod.ru/volumes/VOL332006/p3101.html
 # H(alpha)|d> = |psi> = c1*|d> + c2*|u>
 
 class A(object):
