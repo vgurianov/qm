@@ -18,5 +18,24 @@ Quantum effects may be described as follows.
  Following the tradition of programming languages such as Smalltalk and Python, we will treat both the classes themselves and class instances as objects. We will rely on the interpretation of quantum mechanics was proposed by Werner Heisenberg (Fock, R.Harre). Class instances will be interpreted as objects of reality in the classical sense, and classes will be interpreted as objects that exist in possibility.
 
  ## 3. Annotation of the site
- text
- 
+The software is implemented in Python 3. An extended description of the quantum
+effects described above is given, documentation for the software is presented,
+and experimental results are presented.  
+
+The resource also discusses some additional issues of quantum theory in section "3. Other quantum models".  
+
+An ontology for the Reseford scattering for the quantum and classical
+cases is considered. Both ontologies are compared. It is shown how the
+transition from the quantum case to the classical case occurs.
+The definition of spin by means of semantic networks is given. For this
+purpose, an analogue of the fibred space for spin 1/2 is used.  
+
+R.Feynman showed that a classical Turing machine would not be able to simulate a quantum effect. In subsection "Turing machine & R.Feynman", we considered this issue.  
+
+In subsection  "Non-numerical model" is proposed and considered model without complex numbers. An ordered pair of looped lists is used to eliminate complex numbers. The main processes
+with this data structure are defined. Based on this construction, a Hilbert’s
+space model is constructed. A model for the collapse of the wave function
+is proposed. The processes that are described by the time-independent and
+time-dependent Schrodinger equations are considered.The problem of space
+and time in quantum mechanics is considered.
+This model gives an idea of what a more detailed quantum mechanics model might look like. 
