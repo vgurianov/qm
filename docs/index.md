@@ -15,9 +15,7 @@ Quantum effects may be described as follows.
  Following the tradition of programming languages such as Smalltalk and Python, we will treat both the classes themselves and class instances as objects. We will rely on the interpretation of quantum mechanics was proposed by Werner Heisenberg (Fock, R.Harre). Class instances will be interpreted as objects of reality in the classical sense, and classes will be interpreted as objects that exist in possibility.
 
 ## 3. Annotation of the site
-The software is implemented in Python 3. An extended description of the quantum
-effects described above is given, documentation for the software is presented,
-and experimental results are presented.  
+The software is implemented in Python 3. In sections "1.Key points" and "2. Main quantum effects", we an extended description of the quantum effects described above is given, documentation for the software is presented, and experimental results are presented.  
 
 The resource also discusses some additional issues of quantum theory in section "3. Other quantum models".  
 
