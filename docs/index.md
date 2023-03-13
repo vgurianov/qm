@@ -13,7 +13,7 @@ Quantum effects may be described as follows.
 To describe scientific models, we will use the language of object-oriented simulation [UML2 SP](https://vgurianov.github.io/uml-sp/). This language is a profile of UML and is an object-oriented version of the well-known IDEF0 methodology. The semantic network is built from frames, which are the "class" UML-element. Each frame is labeled "Concept". This labeled value is assigned a concept, which allows you to build a conceptual model of the subject area.  
 
 
-## 3. Annotation of the site
+## 3. Site Overview
 The software is implemented in Python 3. In sections "1.Key points" and "2. Main quantum effects", we an extended description of the quantum effects described above is given, documentation for the software is presented, and experimental results are presented.  
 
 The resource also discusses some additional issues of quantum theory in section "3. Other quantum models".  
