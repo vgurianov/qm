@@ -5,12 +5,12 @@ This resource contains software for the work [Gurianov, V.I. (2023). Simulation 
 Quantum effects may be described as follows.
 
  * Wave function analog is a class.
- * Wave function collapse analog is to run constructor of the class and create an object, i.e. instance of the class.
- * Quantum superposition analog is multiple inheritances. If the classes have attributes or operations with an identical name then multiple inheritances have a conflict of the names. In this conflict, we will resolve the "quantum rule", i.e. to use an amplitude of wave function.  
+ * A wave function collapse analog is to run constructor of the class and create instance of the class.
+ * A quantum superposition analog is multiple inheritance. If the classes have attributes or operations with an identical name then multiple inheritance have a conflict of names. In this conflict, we will resolve the ”quantum rule”, i.e. using an amplitude of wave function. We note right away that complex numbers can be eliminated by replacing them with objects constructions. 
 
 ## 2. Simulation language  
 
-To describe scientific models, we will use the language of object-oriented simulation [UML2 SP](https://vgurianov.github.io/uml-sp/). This language is a profile of UML and is an object-oriented version of the well-known IDEF0 methodology. The semantic network is built from frames, which are the "class" UML-element. Each frame is labeled "Concept". This labeled value is assigned a concept, which allows you to build a conceptual model of the subject area.  
+To describe scientific models, we will use the language of object-oriented simulation [UML2 SP](https://vgurianov.github.io/uml-sp/). This language is a profile of UML and is an object oriented version of the well-known IDEF0 (SADT) methodology. The semantic network is built from frames, which are the ”class” UML-element. Each frame is tagged ”Concept”. This tagged value is assigned a specific concept, which allows the building of a conceptual model of the problem domain. 
 
 
 ## 3. Site Overview
