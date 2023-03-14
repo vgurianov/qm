@@ -65,6 +65,7 @@ Figure 4 - Classical experiment result
 Same  result can be get if 'A' and 'B' classes has different name of the operations (for instance, move_to_x1 and move_to_x2).  
 
 ## 4. Software
+The complete code is here [https://github.com/vgurianov/qm/software/slits.py](https://github.com/vgurianov/qm/blob/master/software/slits.py).
 Both classes A and B describe a paths from $$x_{0}$$ to $$x_{1}$$.  
 The 'Mix' class describe wave function $$|\psi\rangle$$. The function has 'wa' and 'wb' atributes. It are coeficents of the wave function. In the function '__init__' operation resolve the conflict names 'move_to_x1'.  
 The 'Plant' class simulate a experimental facility.  
