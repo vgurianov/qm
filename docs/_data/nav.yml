@@ -8,7 +8,7 @@ toc:
   - title: 2. Main quantum effects
     subfolderitems:
       - page:  Double-slit experiment
-        url: /qm/sorry.html
+        url: /qm/slits.html
       - page: Uncertainty principle
         url: /qm/sorry.html
       - page: Entanglement
