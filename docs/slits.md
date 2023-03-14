@@ -70,6 +70,8 @@ The complete code is here [https://github.com/vgurianov/qm/software/slits.py](ht
 Both classes A and B describe a paths from $$x_{0}$$ to $$x_{1}$$.  
 The 'Mix' class describe wave function $$|\psi\rangle$$. The function has 'wa' and 'wb' atributes. It are coeficents of the wave function. In the function '__init__' operation resolve the conflict names 'move_to_x1'.  
 The 'Node' class simulate a experimental device.  
+  
+Calculation of measurement errors.    
 Let n is count of measurements then the standard deviation is  
 \begin{equation}  
 \sigma = \sqrt{\frac{1}{n(n-1)}\sum\limits_{i=1}^{n}(\Delta x_{i})^2 },  
@@ -78,7 +80,8 @@ where  $$\Delta x_{i}=x_{i}-\overline{x}$$, $$\overline{x}$$ is the sample mean.
 Then $$x = \overline{x} \pm \Delta_{s}x$$.
 <!---
 https://en.wikipedia.org/wiki/Confidence_interval#Confidence_interval_for_specific_distributions
---->
+--->  
+
 In other denotes, the standard deviation is
 
 $$\sigma = \sqrt{\operatorname {Var}(x_{ar}) / (n-1)}$$,  
@@ -86,6 +89,3 @@ where $$\operatorname {Var}(x_{ar})$$  is  variance and n is count of measuremen
 The confidence interval is   
 $$\Delta_{\sigma}x = \sigma\overline{x}/\sqrt{n}$$  
 
-
-
-## 5. Conclusion
