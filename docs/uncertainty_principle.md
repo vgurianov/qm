@@ -1,14 +1,14 @@
 # Uncertainty principle
 ## 1. Matematical discription
-Let $$\hat {L}$$ and $\hat {M}$ be  self-adjoint operators and their commutator $[{\hat {L}},{\hat {M}}]={\hat {L}}{\hat {M}}-{\hat {M}}{\hat {L}}$ be non-zero. Denote by $\mid l_i\rangle$ and $\mid m_j\rangle$, $i,j=1,2$ the eigenfunctions of these operators.
+Let $$\hat {L}$$ and $$\hat {M}$$ be  self-adjoint operators and their commutator $$[{\hat {L}},{\hat {M}}]={\hat {L}}{\hat {M}}-{\hat {M}}{\hat {L}}$$ be non-zero. Denote by $$\mid l_i\rangle$ and $\mid m_j\rangle$$, $$i,j=1,2$$ the eigenfunctions of these operators.
 
-Let wave function $\mid a\rangle$ be determined in $$l$$-basis
+Let wave function $$\mid a\rangle$$ be determined in $$l$$-basis
 
 \begin{equation}
 	|a\rangle = a_1|l_1\rangle   + a_2|l_2\rangle
               = \langle l_1|a\rangle |l_1\rangle   + \langle l_2|a\rangle |l_2\rangle
 \end{equation}  
-Both $m$- and $l$-basis can be transform into each other.
+Both $$m$$- and $$l$$-basis can be transform into each other.
 
 \begin{eqnarray}
 	\mid l_1\rangle = \langle m_1 \mid l_1\rangle \mid m_1\rangle   + \langle m_2 \mid l_1\rangle \mid m_2\rangle \nonumber \\
@@ -34,8 +34,9 @@ b_2 = a_1 \langle m_2 \mid l_1\rangle + a_2  \langle m_2\mid l_2\rangle
 \end{eqnarray}  
 
 i.e. $$ b = Ua $$, where $$U$$ is a unitary operator and $$a^+=(a_1,a_2)$$, $$b^+=(b_1,b_2)$$.
-
+<!---
 % https://en.wikipedia.org/wiki/Unitary_operator
+-->
 A unitary operator satisfies $$U^*U = UU^* = I$$, where $$U^*$$ is the adjoint of $$U$$, and $$I$$ is the identity operator. Suppose that the unitary operator has form
 
 $$
