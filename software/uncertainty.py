@@ -1,7 +1,7 @@
 # -----------------------------------------------------------
 # The Uncertainty Principle
 #
-# (C) 2023 Vasyliy I. Gurianov, Russia
+# (C) 2023 Vasyliy I. Gurianov
 # Github: https://github.com/vgurianov/qm/uncertainty.py
 # Released under MIT License
 # email: vg2007sns@rambler.ru
