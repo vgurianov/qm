@@ -1,7 +1,7 @@
 ﻿# -----------------------------------------------------------
 # Double-slit experiment
 #
-# (C) 2023 Vasyliy I. Gurianov, Russia
+# (C) 2023 Vasyliy I. Gurianov
 # Github: https://github.com/vgurianov/qm
 # Released under MIT License
 # email: vg2007sns@rambler.ru
