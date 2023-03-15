@@ -1,6 +1,6 @@
 # Uncertainty principle
 ## 1. Matematical discription
-Let $$\hat {L}$$ and $$\hat {M}$$ be  self-adjoint operators and their commutator $$[{\hat {L}},{\hat {M}}]={\hat {L}}{\hat {M}}-{\hat {M}}{\hat {L}}$$ be non-zero. Denote by $$\mid l_i\rangle$ and $\mid m_j\rangle$$, $$i,j=1,2$$ the eigenfunctions of these operators.
+Let $$\hat {L}$$ and $$\hat {M}$$ be  self-adjoint operators and their commutator $$[{\hat {L}},{\hat {M}}]={\hat {L}}{\hat {M}}-{\hat {M}}{\hat {L}}$$ be non-zero. Denote by $$\mid l_i\rangle$$ and $$\mid m_j\rangle$$, $$i,j=1,2$$ the eigenfunctions of these operators.
 
 Let wave function $$\mid a\rangle$$ be determined in $$l$$-basis
 
@@ -15,7 +15,7 @@ Both $$m$$- and $$l$$-basis can be transform into each other.
 	  	\mid l_2\rangle = \langle m_1\mid l_2\rangle \mid m_1\rangle   + \langle m_2\mid l_2\rangle \mid m_2\rangle
 \end{eqnarray}
 
-Now we can to transform $|a\rangle$ wave function to $m$-basis.
+Now we can to transform $$|a\rangle$$ wave function to $$m$$-basis.
 
 \begin{multline}
 	|a\rangle   =  a_1 |l_1\rangle   + a_2 |l_2\rangle = \nonumber\\
@@ -43,7 +43,7 @@ $$
 U =
 \begin{pmatrix}
 	1/\sqrt{2} & 1/{\sqrt{2}}  \\
-	1/\sqrt{2} & -1/\sqrt{2}
+	-1/\sqrt{2} & 1/\sqrt{2}
 \end{pmatrix}
 $$  
 then we get uncertainty principle.
