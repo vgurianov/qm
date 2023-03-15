@@ -15,7 +15,7 @@ Both $$m$$- and $$l$$-basis can be transform into each other.
 	  	\mid l_2\rangle = \langle m_1\mid l_2\rangle \mid m_1\rangle   + \langle m_2\mid l_2\rangle \mid m_2\rangle
 \end{eqnarray}
 
-Now we can to transform $$|a\rangle$$ wave function to $$m$$-basis.
+Now we can to transform $$\mid a \rangle$$ wave function to $$m$$-basis.
 
 \begin{multline}
 	|a\rangle   =  a_1 |l_1\rangle   + a_2 |l_2\rangle = \nonumber\\
