@@ -66,4 +66,6 @@ Experiment result is depicted in table
 | №   | $$\mid m_1\rangle$$   |$$\mid m_2\rangle$$  | $$\mid l_1\rangle$$   | $$\mid l_2\rangle$$ |
 | --- | ---- | --- | ---- | :----------: |
 | 1   | 1.0 | 0.0 | 0.497 | 0.503         |
-| 2   | 0.499 | 0.501 | 1.0 | 0.0         |
+| 2   | 0.499 | 0.501 | 1.0 | 0.0         |  
+
+The complete code is here [https://github.com/vgurianov/qm/software/uncertainty.py](https://github.com/vgurianov/qm/blob/master/software/uncertainty.py).
