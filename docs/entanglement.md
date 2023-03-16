@@ -1,5 +1,7 @@
 # Entanglement
-%http://www.eslitak.com/index/0-5
+<!---
+
+-->
 ## 1. Mathematical description
 We will not consider the EPR paradox, so we will consider quantum entanglement for only one property. Consider a quantum system having two particles. Each particle can be in two states: 0 and 1. In general, the wave function has the following form  
 \begin{equation}
