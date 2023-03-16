@@ -1,4 +1,4 @@
-# Entanglement
+# Quantum Entanglement
 <!---
 
 -->
