@@ -33,4 +33,6 @@ Fig.5. The entanglement wave function
 The message exchange order will be as follows,Fig.6.
 
 ![Image](entanglement_2.png)  
-Fig.6. Sequence of messages
+Fig.6. Sequence of messages  
+  
+The complete code is here [https://github.com/vgurianov/qm/software/entaglement.py](https://github.com/vgurianov/qm/blob/master/software/entaglement.py).
