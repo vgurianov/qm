@@ -14,7 +14,7 @@ toc:
       - page: Entanglement
         url: /qm/entanglement.html
       - page: Bell’s test
-        url: /qm/sorry.html
+        url: /qm/bell.html
   - title: 3. Other quantum models
     subfolderitems:
       - page: Formula1
