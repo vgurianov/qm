@@ -49,6 +49,8 @@ The dependence of the probability density on the angle of rotation is shown in F
 ![Image](bell2.png)
 Fig.8. The probability density of the angle
 
+The complete code is here [https://github.com/vgurianov/qm/software/bell.py](https://github.com/vgurianov/qm/blob/master/software/bell.py).
+
 We will use the same model as in section 5, only now the angle will take three values AB = 240° BC = 60° AC = 300° randomly. The experiment measured the number of events and showed the inequality  
 \begin{equation}
 	N[A^+,B^+] \leq N[B^-,C^-] + N[A^+,C^+]
