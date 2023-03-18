@@ -1,3 +1,26 @@
+
+# Calculation of measurement errors.    
+Let n is count of measurements then the standard deviation is  
+\begin{equation}  
+\sigma = \sqrt{\frac{1}{n(n-1)}\sum\limits_{i=1}^{n}(\Delta x_{i})^2 },  
+\end{equation}  
+where  $$\Delta x_{i}=x_{i}-\overline{x}$$, $$\overline{x}$$ is the sample mean. The confidence interval is $$\Delta_{\sigma}x = t_{n,\alpha}\sigma$$, where  $$t_{n,\alpha}$$ is a Student's t distribution with n − 1 degrees of freedom, $$\alpha=0.95$$ (the 95th percentile). We use the function  stats.t.ppf((1.0 + 0.95)/2, n-1) from the 'stats' package.  
+Then $$x = \overline{x} \pm \Delta_{s}x$$.
+<!---
+https://en.wikipedia.org/wiki/Confidence_interval#Confidence_interval_for_specific_distributions
+--->  
+
+In other denotes, the standard deviation is
+
+$$\sigma = \sqrt{\operatorname {Var}(x_{ar}) / (n-1)}$$,  
+where $$\operatorname {Var}(x_{ar})$$  is  variance and n is count of measurements.  
+The confidence interval is   
+$$\Delta_{\sigma}x = \sigma\overline{x}/\sqrt{n}$$  
+
+
+====================
+Formula
+
 The mass-energy equivalence is described by the famous equation
 $$ E=mc^2 $$
 discovered in 1905 by Albert Einstein.  
