@@ -17,15 +17,13 @@ toc:
         url: /qm/bell.html
   - title: 3. Other quantum models
     subfolderitems:
-      - page: Formula1
-        url: /qm/p.html
       - page: Rutherford scattering I
         url: /qm/sorry.html
       - page: Rutherford scattering II
         url: /qm/sorry.html
       - page: Spin
         url: /qm/sorry.html
-      - page: Turing machine & R.Feynman
+      - page: Turing machine
         url: /qm/sorry.html
       - page: Non-numerical models
         url: /qm/sorry.html
@@ -33,6 +31,8 @@ toc:
         url: /qm/sorry.html
   - title: Appendix
     subfolderitems:
+      - page: Measurement error
+        url: /qm/p.html
       - page: Complex nambers
         url: /qm/sorry.html
       - page: Metamodeling in Python
