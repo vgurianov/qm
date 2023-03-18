@@ -412,6 +412,6 @@ class Node(object):  # it is a classical object
 # -------------------------
 node = Node()
 #node.table()
-#node.experiment0() # Rotation devices
+#node.experiment0() # device rotation
 node.experiment1()  # Bell's test
 
