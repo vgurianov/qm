@@ -15,7 +15,14 @@ In other denotes, the standard deviation is
 $$\sigma = \sqrt{\operatorname {Var}(x_{ar}) / (n-1)}$$,  
 where $$\operatorname {Var}(x_{ar})$$  is  variance and n is count of measurements.  
 The confidence interval is   
-$$\Delta_{\sigma}x = \sigma\overline{x}/\sqrt{n}$$  
+$$\Delta_{\sigma}x = \sigma\overline{x}/\sqrt{n}$$ 
+(for examle, see [wiki]([https://en.wikipedia.org/wiki/Confidence_interval])
+
+Where X is the sample mean, and S2 is the sample variance. Then
+has a Student's t distribution with kn − 1 degrees of freedom
+Example: alfa = 0.95, from a student t = 3.18 for kn = 4; 0.95 - confidence interval , 60-1 degrees of freedom
+denoting ppf as the 95th percentile of this distribution
+We usage function stats.t.ppf((1 + 0.95)/2, kn-1) from scipy package (from scipy import stats)
 
 
 ====================
