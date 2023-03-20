@@ -1,8 +1,8 @@
 ﻿# -----------------------------------------------------------
 # Double-slit experiment
 #
-# (C) 2023 Vasyliy I. Gurianov, Russia
-# Github: https://github.com/vgurianov/qm
+# (C) 2023 Vasyliy I. Gurianov
+# Github: https://github.com/vgurianov/qm/slits.py
 # Released under MIT License
 # email: vg2007sns@rambler.ru
 # -----------------------------------------------------------
@@ -13,7 +13,7 @@ import random
 import matplotlib.pyplot as plt
 from scipy import stats
 
-# superpoz.jpg
+# 
 # 
 #  |psi> = ca*|a> + cb*|b>
 #  <a|psi> = ca*<a|a> + cb*<a|b>
