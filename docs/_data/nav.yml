@@ -18,9 +18,9 @@ toc:
   - title: 3. Other quantum models
     subfolderitems:
       - page: Rutherford scattering I
-        url: /qm/sorry.html
+        url: /qm/scattering1.html
       - page: Rutherford scattering II
-        url: /qm/sorry.html
+        url: /qm/scattering2.html
       - page: Spin
         url: /qm/sorry.html
       - page: Turing machine
