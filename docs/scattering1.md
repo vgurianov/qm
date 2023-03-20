@@ -1,4 +1,4 @@
-# Rutherford scattering I. Quantum case.
+# Rutherford scattering I. Quantum model.
 <!---
 % https://en.wikipedia.org/wiki/Rutherford_scattering
 % Blohincev1976ru.djvu, p.331 
@@ -11,10 +11,9 @@ Let us consider the scattering of alpha particles by heavy metal atoms.
 The scattering amplitude of fast charged particles on atoms is determined by the formula
 
 \begin{equation}
-A(\theta)=-\frac{ee_{1}}{2\mu v^2} \left\{Z-F(\theta ) \right\}cosec^2\frac{\theta }{2},
+A(\theta)=-\frac{ee_{1}}{2\mu v^2} \left \{Z-F(\theta ) \right\ }cosec^2\frac{\theta }{2},
 \end{equation}  
-here  
-$$F(\theta)$$ is atomic factor, $$e$$ is electron charge,$$e_1$$ is an alpha-particle charge, $$\mu$$ is mass of an alpha-particle, $$v$$ is velocity alpha-particle.  
+here $$F(\theta)$$ is atomic factor, $$e$$ is electron charge,$$e_1$$ is an alpha-particle charge, $$\mu$$ is mass of an alpha-particle, $$v$$ is velocity alpha-particle.  
 Atomic factor for an atom with radius $$a$$ is  
 
 \begin{equation}
