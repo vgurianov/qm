@@ -1,4 +1,4 @@
-# Rutherford scattering I. Quantum model.
+# Rutherford scattering I. Quantum case.
 <!---
 % https://en.wikipedia.org/wiki/Rutherford_scattering
 % Blohincev1976ru.djvu, p.331 
@@ -53,3 +53,5 @@ Typical result of the experiment is depicted in Fig.3 (kn = 10 measurements for 
 
 ![Image](scattering_result_q.png)
 Figure 3 - Experiment result    
+
+The complete code is here [https://github.com/vgurianov/qm/software/scattering_q.py](https://github.com/vgurianov/qm/blob/master/software/scattering_q.py).
