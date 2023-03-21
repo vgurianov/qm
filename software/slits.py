@@ -90,7 +90,7 @@ class Node(object):  # it is a classical object
         self.head.right.right = Item()
         self.tail = self.head.right.right # direction in space
 
-    def one_tick(self): # tag "Exist"
+    def one_tick(self): 
         self.x0 = Leaf()  # create particle
         # self.head.component = Leaf() is more correctly
         self.x1 = None    # clear detector
@@ -101,7 +101,7 @@ class Node(object):  # it is a classical object
             # self.tail.component = a.fun.move_to_x1(self.x0) is more correctly
 
 
-    def Run(self): 
+    def Run(self): # tag "Exist"
         """  Concept = Experiment """
 
         #print(A.__mro__)
