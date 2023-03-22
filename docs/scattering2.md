@@ -12,10 +12,10 @@ where p is the impact parameter, b is the stopping distance and
   b=\frac{2NeQ}{mu^2}
 \end{equation},  
 where Ne is the charge of the atom, m is the mass, u is the velocity, Q is the charge of the alpha particle.  
-The dependence of the scattering angle $\theta$ on the impact parameter $p$ is shown in fig.1.   
+The dependence of the scattering angle $$\theta$$ on the impact parameter $$p$$ is shown in fig.1.   
 
 ![Image](angle_cl.png)
-Fig.1. The $\theta(p)$ dependence   
+Fig.1. The $$\theta(p)$$ dependence   
 
 
 ## 2. Semantic Net Description  
