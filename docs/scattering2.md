@@ -36,6 +36,8 @@ Typical result of the experiment is depicted in Fig.3 (kn = 10 measurements for 
 ![Image](scattering_result_cl.png)
 Figure 3 - Experiment result
 
+The complete code is here [https://github.com/vgurianov/qm/software/scattering_c.py](https://github.com/vgurianov/qm/blob/master/software/scattering_c.py).
+
 ## 3. Classical and quantum models comparison
 Comparing the diagrams, two main differences can be noted:
 1. The frame in the quantum case is the result of multiple inheritance
