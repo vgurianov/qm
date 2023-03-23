@@ -8,9 +8,9 @@ Spin is other type of angular momentum in quantum mechanics.
 
 Spin can be defined in terms of the spatial rotation group. The formula looks like  
 
-$\alpha = 360°/s$,  
+$$\alpha = 360°/s$$,  
 
-where $\alpha$ is the angle of turn, s is the spin.
+where $$\alpha$$ is the angle of turn, s is the spin.
 
 A spin-zero particle can only have a single quantum state, even after torque is applied. A spin-0 particle can be imagined as sphere, which looks the same after whatever angle it is turned through.
 
