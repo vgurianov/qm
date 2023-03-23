@@ -114,6 +114,7 @@ Then the ontology will look like Fig.3
 Fig.3. Ontological description of spin  
 
 In the quantum case, the *Leaf* and *Node* classes are replaced by wave functions.  
+The complete code is here [https://github.com/vgurianov/qm/software/spin-classic.py](https://github.com/vgurianov/qm/blob/master/software/spin-classic.py). 
 
 ## 2. Spin 1/2
 Let us consider the rotation of a point particle over the surface of a Möbius strip. This will require four steps. The two steps are shown in Figures 4 and 5.
@@ -162,4 +163,4 @@ Then the semantic net description will look like Fig.5
 ![Image](spin_half3.png)  
 Fig.5. Semantic net description of spin 1/2  
 
-The complete code is here [https://github.com/vgurianov/qm/software/spin_classic.py](https://github.com/vgurianov/qm/blob/master/software/spin_classic.py). 
+
