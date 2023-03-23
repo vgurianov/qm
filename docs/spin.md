@@ -1,7 +1,8 @@
 # Spin
+<!---
 % https://en.wikipedia.org/wiki/Spin_(physics)
 % https://en.wikipedia.org/wiki/Spin-1/2
-
+-->
 ## 1. Mathematical description
 The orbital angular momentum operator is the quantum-mechanical counterpart to the classical angular momentum of orbital revolution.
 Spin is other type of angular momentum in quantum mechanics.  
@@ -159,4 +160,6 @@ def revolve(self):
 Then the semantic net description will look like Fig.5  
 
 ![Image](spin_half3.png)  
-Fig.5. Semantic net description of spin 1/2
+Fig.5. Semantic net description of spin 1/2  
+
+The complete code is here [https://github.com/vgurianov/qm/software/spin_classic.py](https://github.com/vgurianov/qm/blob/master/software/spin_classic.py). 
