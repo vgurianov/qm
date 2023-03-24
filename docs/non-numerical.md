@@ -67,38 +67,40 @@ def act(self, z):
 ```
 Note that in this procedure we can also get rid of the number P and random - function.
 It can be replaced with the corresponding processes.
+<!---
 % https://en.wikipedia.org/wiki/Linear_congruential_generator
+-->
 
-Full code is the [Schrödinger1.py](Schrödinger1.py).
+Full code is the [https://github.com/vgurianov/qm/software/Schrödinger1.py](https://github.com/vgurianov/qm/blob/master/software/Schrödinger1.py).
 
 ## 2. Time-dependent Schrödinger equation
 
 The time-dependent Schrödinger equation has form  
 
-$$ i\hbar frac {d}{dt}  |\Psi (t)\rangle = \hat {H}|\Psi (t)\rangle  
+$$ i\hbar frac {d}{dt}  |\Psi (t)\rangle = \hat {H}|\Psi (t)\rangle  $$
 
-where t is time, $$\vert \Psi (t)\rangle$$ is the state vector of the quantum system , and  $$\hat {H}$$ is a Hamiltonian operator.  
-A time-dependent state vector $$|\Psi (t)\rangle$$  can be written as the linear combination  
+where t is time, $$\vert \Psi (t)\rangle $$ is the state vector of the quantum system , and  $$\hat {H}$$ is a Hamiltonian operator.  
+A time-dependent state vector $$|\Psi (t)\rangle $$  can be written as the linear combination  
 
 $$\Psi (t)\rangle =\sum _{n}A_{n}e^-iE_{n}t/\hbar,$$  
 
-where $$A_{n}$$ are complex numbers and the vectors $$|\psi _{E_{n}}\rangle$$ are solutions of the time-independent equation $$\hat {H}|\psi _{E_{n}}\rangle =E_{n}|\psi$$.  
+where $$ A_{n} $$ are complex numbers and the vectors $$|\psi _{E_{n}}\rangle $$ are solutions of the time-independent equation $$ \hat {H}|\psi _{E_{n}} \rangle = E_{n}|\psi \rangle $$.  
 
 The time-dependent finite difference Schrödinger equation will be  
 
-$$ i\hbar frac {|\Psi (t_{i+1} - |\Psi (t_{i} )\rangle}{\Delta t}   = \hat {H}|\Psi (t_{i})\rangle$$  
+$$ i\hbar frac {|\Psi (t_{i+1} - |\Psi (t_{i} )\rangle}{\Delta t}   = \hat {H}|\Psi (t_{i})\rangle $$  
 
 From here we get a constant-recursive sequence  
 
 $$  |\Psi (t_{i+1}) = \hat {C}|\Psi (t_{i} )\rangle}$$,  
 here   
-$$\hat {C} = 1 + frac {1}{i\hbar}\hat {H}\Delta t $$
+$$\hat {C} = 1 + frac {1}{i\hbar} \hat {H} \Delta t $$
 
-The complex $$frac {1}{i\hbar}\hat {H}\Delta t$$ is dimensionless. Therefore, we write it in the following form  
+The complex $$frac {1}{i\hbar}\hat {H}\Delta t $$ is dimensionless. Therefore, we write it in the following form  
 
-$$\hat {C} = 1 - i \omega $$ $$  
+$$\hat {C} = 1 - i \omega $$  
 
-where $$omega$$ is some integer number.
+where $$\omega$$ is some integer number.
 In simulation models, $$\Delta t = 1$$. It is an one tick of modeling time.  
 
 We may implement it like this
