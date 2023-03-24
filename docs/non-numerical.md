@@ -17,7 +17,7 @@ We should choose data structures/processes that are as simple as possible. Extre
 
 To exclude complex numbers from models, we will consider a looped dynamic list. We choose a looped list because this data structure remains invariant after the list has been traversed. A description of these data structures and operations on structures is given in [Appendix. Complex numbers](complex_numbers.html).
 
-## 1. Hilbert space and name conflict resolution
+## 1. Hilbert space and names conflict resolution
 
 To build a simulation of Hilbert space , let's take the ComplexNumber data structure described in the Appendix. Complex numbers. Let's add two more attributes to this structure: next and data.  
 ``` python
@@ -88,11 +88,11 @@ where $$ A_{n} $$ are complex numbers and the vectors $$|\psi _{E_{n}}\rangle $$
 
 The time-dependent finite difference Schrödinger equation will be  
 
-$$ i\hbar \frac {|\Psi (t_{i+1} - |\Psi (t_{i} )\rangle}{\Delta t}   = \hat {H}|\Psi (t_{i})\rangle $$  
+$$ i\hbar \frac {|\Psi (t_{i+1})\rangle - |\Psi (t_{i} )\rangle}{\Delta t}   = \hat {H}|\Psi (t_{i})\rangle $$  
 
 From here we get a constant-recursive sequence  
 
-$$  |\Psi (t_{i+1}) = \hat {C}|\Psi (t_{i} )\rangle}$$,  
+$$  |\Psi (t_{i+1}) \rangle = \hat {C}|\Psi (t_{i} ) \rangle $$,  
 here   
 $$\hat {C} = 1 + \frac {1}{i\hbar} \hat {H} \Delta t $$
 
