@@ -77,7 +77,7 @@ Full code is the [https://github.com/vgurianov/qm/software/Schrödinger1.py](htt
 
 The time-dependent Schrödinger equation has form  
 
-$$ i\hbar frac {d}{dt}  |\Psi (t)\rangle = \hat {H}|\Psi (t)\rangle  $$
+$$ i\hbar \frac{d}{dt}  |\Psi (t)\rangle = \hat {H}|\Psi (t)\rangle  $$
 
 where t is time, $$\vert \Psi (t)\rangle $$ is the state vector of the quantum system , and  $$\hat {H}$$ is a Hamiltonian operator.  
 A time-dependent state vector $$|\Psi (t)\rangle $$  can be written as the linear combination  
@@ -94,9 +94,9 @@ From here we get a constant-recursive sequence
 
 $$  |\Psi (t_{i+1}) = \hat {C}|\Psi (t_{i} )\rangle}$$,  
 here   
-$$\hat {C} = 1 + frac {1}{i\hbar} \hat {H} \Delta t $$
+$$\hat {C} = 1 + \frac {1}{i\hbar} \hat {H} \Delta t $$
 
-The complex $$frac {1}{i\hbar}\hat {H}\Delta t $$ is dimensionless. Therefore, we write it in the following form  
+The complex $$\frac {1}{i\hbar}\hat {H}\Delta t $$ is dimensionless. Therefore, we write it in the following form  
 
 $$\hat {C} = 1 - i \omega $$  
 
