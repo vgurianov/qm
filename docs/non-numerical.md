@@ -79,16 +79,16 @@ The time-dependent Schrödinger equation has form
 
 $$ i\hbar \frac{d}{dt}  |\Psi (t)\rangle = \hat {H}|\Psi (t)\rangle  $$
 
-where t is time, $$\vert \Psi (t)\rangle $$ is the state vector of the quantum system , and  $$\hat {H}$$ is a Hamiltonian operator.  
+where $$t$$ is time, $$\vert \Psi (t)\rangle $$ is the state vector of the quantum system , and  $$\hat {H}$$ is a Hamiltonian operator.  
 A time-dependent state vector $$|\Psi (t)\rangle $$  can be written as the linear combination  
 
-$$\Psi (t)\rangle =\sum _{n}A_{n}e^-iE_{n}t/\hbar,$$  
+$$\Psi (t)\rangle =\sum _{n}A_{n}e^{-iE_{n}t / \hbar},$$  
 
 where $$ A_{n} $$ are complex numbers and the vectors $$|\psi _{E_{n}}\rangle $$ are solutions of the time-independent equation $$ \hat {H}|\psi _{E_{n}} \rangle = E_{n}|\psi \rangle $$.  
 
 The time-dependent finite difference Schrödinger equation will be  
 
-$$ i\hbar frac {|\Psi (t_{i+1} - |\Psi (t_{i} )\rangle}{\Delta t}   = \hat {H}|\Psi (t_{i})\rangle $$  
+$$ i\hbar \frac {|\Psi (t_{i+1} - |\Psi (t_{i} )\rangle}{\Delta t}   = \hat {H}|\Psi (t_{i})\rangle $$  
 
 From here we get a constant-recursive sequence  
 
