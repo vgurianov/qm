@@ -197,7 +197,8 @@ def amplitude_squared(z):
     t.right = z0
     return z0
 ```  
-Full code is here [complex.py](complex.py).  
+ 
+The complete code is here [https://github.com/vgurianov/qm/software/complex.py](https://github.com/vgurianov/qm/blob/master/software/complex.py).  
 
 From a physical point of view, the following processes are of particular interest:  
 - cadd(z1,z2) are the process superposition z1 and z2
