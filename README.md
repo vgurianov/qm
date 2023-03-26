@@ -1,5 +1,4 @@
 # Ontologies in Quantum Mechanics
- in progress ...
 
 This resource contains additional materials to work
 [Gurianov, V.I. (2023). Simulation of Certain Quantum Effects. Cambridge Open Engage. doi:10.33774/coe-2023-v5sc8](https://www.cambridge.org/engage/coe/article-details/6401b76a37e01856dc125cda) This content is a preprint and has not been peer-reviewed.
