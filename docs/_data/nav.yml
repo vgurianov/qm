@@ -34,6 +34,6 @@ toc:
       - page: Measurement error
         url: /qm/p.html
       - page: Complex nambers
-        url: /qm/sorry.html
+        url: /qm/complex_numbers.html
       - page: Metamodeling in Python
         url: /qm/sorry.html
