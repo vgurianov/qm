@@ -37,6 +37,10 @@ c = \pm \frac{1}{2\sqrt\pi}
 
 
 ## 2. Semantic net description
+The UML2 SP language is designed to develop simulation models according to the SSP (Use Case, Analysis, and Design Models) methodology, which is an adapted version of the Unified Process.
+An analysis model is a conceptual domain model. In SSP, the conceptual model is an ontology.
+To build the ontology of the subject area, the principle of decomposition is used. In fact, this means applying the "Composite" design pattern by GoF. Note that in the SSP methodology, not only the structure, but also the activity is subjected to decomposition.  
+
 An ontology of the double-slit experiment is depicted in Fig.1
 
 ![Image](double-path.png)
