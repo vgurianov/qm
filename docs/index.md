@@ -3,8 +3,8 @@ This resource contains software for the work [Gurianov, V.I. (2023). Simulation 
 
 ## 1. Description key points 
 An ontological description of quantum mechanics is necessary to build a conceptual model of Multi-Agent Systems (MAS) in the field of nanotechnology. This resource provides a description of the basic principles for constructing such ontologies.  
-Quantum effects may be described as follows.
 
+Quantum effects may be described as follows.
  * Wave function analog is a class.
  * A wave function collapse analog is to run constructor of the class and create instance of the class.
  * A quantum superposition analog is multiple inheritance. If the classes have attributes or operations with an identical name then multiple inheritance have a conflict of names. In this conflict, we will resolve the ”quantum rule”, i.e. using an amplitude of wave function. We note right away that complex numbers can be eliminated by replacing them with objects constructions. 
@@ -14,7 +14,7 @@ Quantum effects may be described as follows.
 To describe scientific models, we will use the language of object-oriented simulation [UML2 SP](https://vgurianov.github.io/uml-sp/). This language is a profile of UML and is an object oriented version of the well-known IDEF0 (SADT) methodology. The semantic network is built from frames, which are the ”class” UML-element. Each frame is tagged ”Concept”. This tagged value is assigned a specific concept, which allows the building of a conceptual model of the problem domain. 
 
 
-## 3. Site Overview
+## 3. Overview
 In sections "1.Key points" and "2. Main quantum effects", an extended description of the quantum effects is given, documentation for the software is presented, and experimental results are presented. The simulation software is implemented in Python 3.  
 
 The resource also discusses some additional issues of quantum theory in section "3. Other quantum models".  
