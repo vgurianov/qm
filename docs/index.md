@@ -2,6 +2,7 @@
 This resource contains software for the work [Gurianov, V.I. (2023). Simulation of Certain Quantum Effects. Cambridge Open Engage. doi:10.33774/coe-2023-v5sc8 ](https://www.cambridge.org/engage/coe/article-details/6401b76a37e01856dc125cda).This content is a preprint and has not been peer-reviewed.    
 
 ## 1. Description key points 
+An ontological description of quantum mechanics is necessary to build a conceptual model of Multi-Agent Systems (MAS) in the field of nanotechnology. This resource provides a description of the basic principles for constructing such ontologies.
 Quantum effects may be described as follows.
 
  * Wave function analog is a class.
