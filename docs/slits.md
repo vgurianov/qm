@@ -37,9 +37,10 @@ c = \pm \frac{1}{2\sqrt\pi}
 
 
 ## 2. Semantic net description
-The UML2 SP language is designed to develop simulation models according to the SSP (Use Case, Analysis, and Design Models) methodology, which is an adapted version of the Unified Process.
+The UML2 SP language is designed to develop simulation models according to the SSP (Use-Case, Analysis, and Design Models) methodology, which is an adapted version of the Unified Process.
 An analysis model is a conceptual domain model. In SSP, the conceptual model is an ontology.
-To build the ontology of the subject area, the principle of decomposition is used. In fact, this means applying the "Composite" design pattern by GoF. Note that in the SSP methodology, not only the structure, but also the activity is subjected to decomposition.  
+To build the ontology of the problem domain, the principle of decomposition is used. In fact, this means applying the "Composite" design pattern by GoF. Note that in the SSP methodology, not only the structure, but also the activity is subjected to decomposition.  
+The semantic web is built from frames. Each frame has three tagged values: Concept, FrameType, Category. By default Frame=Structure, Category=Ontology. Tagged value Concept must be assigned to frames.
 
 An ontology of the double-slit experiment is depicted in Fig.1
 
