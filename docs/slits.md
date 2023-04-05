@@ -48,6 +48,13 @@ An ontology of the double-slit experiment is depicted in Fig.1
 ![Image](double-path.png)
 Figure 1 - The ontology of the experiment  
 
+### Component frame
+The frame with the stereotype <<Substance>> defines the most general properties of all elements of the model. In this case, the Run operation is defined. This operation has a stereotype <<Exist>>, which determines the course of model time.  
+
+### Leaf frame
+A frame with <<Atom>> stereotype defines an atomic (indivisible) object. This element has much in common with ABS agents, but there are also differences. In this case, it is a point particle.  
+  
+  
 The ontology is a similar an ontology of classical case but has  'Mix' class. The class inhered 'move_to_x1' operation from both 'A' and 'B' classes. In this case, we has conflict of the names. This conflict resolve as the quantom rule. The 'Mix' class has 'w1' and 'w2' attributes for the quantom rule.  
 The 'Composite' frame define abstract 'Doble-path experiment' concept. The 'Node' frame define concrete experiment and determine the installation construction.  
 
