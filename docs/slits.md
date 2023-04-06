@@ -48,6 +48,8 @@ An ontology of the double-slit experiment is depicted in Fig.1
 ![Image](double-path.png)
 Figure 1 - The ontology of the experiment  
 
+Let us give a brief description of the ontology concepts.  
+
 #### Physical matter
 The "Component" frame with the stereotype <<Substance>> defines the most general properties of all elements of the model. In this case, the "Run" operation is defined. This operation has a stereotype <<Exist>>, which determines the course of model time.  
 
@@ -55,10 +57,17 @@ The "Component" frame with the stereotype <<Substance>> defines the most general
 A frame with <<Atom>> stereotype defines an atomic (indivisible) object. This element has much in common with ABS agents, but there are also differences. In this case, it is a point particle.  
 
 #### Double-path experiment and Space Cell
-A frame with <<Category>> stereotype defines an abstract aggregate (composite object). A frame defines a container for atomic objects and subsystems. The frame defines the operations of adding and deleting objects. In this model, a linked list is used to store objects, the list is specified by the head and tail of the list. This list models a one-dimensional physical space and is inherited by concrete classes, with each class getting its own instance of the space.  
+The "Composite" frame define abstract 'Doble-path experiment' concept. A frame with <<Category>> stereotype defines an abstract aggregate (composite object). A frame defines a container for atomic objects and subsystems. The frame defines the operations of adding and deleting objects. In this model, a linked list is used to store objects, the list is specified by the head and tail of the list. This list models a one-dimensional physical space and is inherited by concrete classes, with each class getting its own instance of the space.  
+
+#### Laboratory
+A frame with <<Context>> stereotype defines an boundary and initial conditions for the system under study. In fact, the experimental device is in relation to the composition with the context, although formally this is not the case.  
+
+Let us now consider the system being modeled.  
+  
+#### Experimental device
   
 The ontology is a similar an ontology of classical case but has  'Mix' class. The class inhered 'move_to_x1' operation from both 'A' and 'B' classes. In this case, we has conflict of the names. This conflict resolve as the quantom rule. The 'Mix' class has 'w1' and 'w2' attributes for the quantom rule.  
-The 'Composite' frame define abstract 'Doble-path experiment' concept. The 'Node' frame define concrete experiment and determine the installation construction.  
+The 'Node' frame define concrete experiment and determine the installation construction.  
 
 One step of the experiment is depicted in Fig.2.  
 ![Image](metaprg.png)
