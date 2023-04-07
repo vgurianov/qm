@@ -57,25 +57,32 @@ The "Component" frame with the stereotype <<Substance>> defines the most general
 A frame with <<Atom>> stereotype defines an atomic (indivisible) object. This element has much in common with ABS agents, but there are also differences. In this case, it is a point particle.  
 
 #### Double-path experiment and Space Cell
-The "Composite" frame define abstract 'Doble-path experiment' concept. A frame with <<Category>> stereotype defines an abstract aggregate (composite object). A frame defines a container for atomic objects and subsystems. The frame defines the operations of adding and deleting objects. In this model, a linked list is used to store objects, the list is specified by the head and tail of the list. This list models a one-dimensional physical space and is inherited by concrete classes, with each class getting its own instance of the space.  
+The "Composite" frame define abstract 'Double-path experiment' concept. A frame with <<Category>> stereotype defines an abstract aggregate (composite object). A frame defines a container for atomic objects and subsystems. The frame defines the operations of adding and deleting objects. In this model, a linked list is used to store objects, the list is specified by the head and tail of the list. This list models a one-dimensional physical space and is inherited by concrete classes, with each class getting its own instance of the space.  
 
 #### Laboratory
 A frame with <<Context>> stereotype defines an boundary and initial conditions for the system under study. In fact, the experimental device is in relation to the composition with the context, although formally this is not the case.  
 
-Let us now consider the system being modeled.  
   
 #### Experimental device
-  
-The ontology is a similar an ontology of classical case but has  'Mix' class. The class inhered 'move_to_x1' operation from both 'A' and 'B' classes. In this case, we has conflict of the names. This conflict resolve as the quantom rule. The 'Mix' class has 'w1' and 'w2' attributes for the quantom rule.  
-The 'Node' frame define concrete experiment and determine the installation construction.  
-
+The "Node" frame define concrete double-slit experiment. Operation 'Run' describes the full cycle of the experiment. A single impulse is moved to a separate one_tick procedure, in fact, all the physics is collected here. The code looks like
+'''Python 
+    def one_tick(self): 
+        self.head.component = Leaf() # create particle
+        self.tail.component = None   # clear detector
+        self.head.right.component = Mix()   # name conflict resolved
+        if self.head.right.component.funс is not None:
+            self.tail.component = self.head.right.component.funс.move_to_x1(self.head.component) # jump to point x1
+'''
 One step of the experiment is depicted in Fig.2.  
 ![Image](metaprg.png)
 Figure 2 - Single experiment  
 
+
 The particle created and put to 'x0' point. Object2 (experimental install) send 'set_w(phi)' message to 'Mix' class wich set both 'w1' and 'w2' attributes. Further, Object2 create an 'a' object, where resolve the names conflict. Next step is execute 'move_to_x1' operation that put the particle to 'x1' point on screen.
 This process execute in 'Run' operation many times for get statistics.  
 We wach that here has  elements metaprogramming.  
+The ontology is a similar an ontology of classical case but has  'Mix' class. The class inhered 'move_to_x1' operation from both 'A' and 'B' classes. In this case, we has conflict of the names. This conflict resolve as the quantom rule. The 'Mix' class has 'w1' and 'w2' attributes for the quantom rule.  
+
 
 ## 3. Experiments result
 Typical result of the experiment is depicted in Fig.3 (kn = 10 measurements for each value $$\varphi$$).
