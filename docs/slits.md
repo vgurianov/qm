@@ -67,12 +67,13 @@ A frame with <<Context>> stereotype defines an boundary and initial conditions f
 The "Node" frame define concrete double-slit experiment. Operation 'Run' describes the full cycle of the experiment. A single impulse is moved to a separate one_tick procedure, in fact, all the physics is collected here. The code looks like  
   
 ``` python 
-    def one_tick(self): 
-        self.head.component = Leaf() # create particle
-        self.tail.component = None   # clear detector
-        self.head.right.component = Mix()   # name conflict resolved
-        if self.head.right.component.funс is not None:
-            self.tail.component = self.head.right.component.funс.move_to_x1(self.head.component) # jump to point x1
+def one_tick(self): 
+  self.head.component = Leaf() # create particle
+  self.tail.component = None   # clear detector
+  self.head.right.component = Mix()   # name conflict resolved
+  if self.head.right.component.funс is not None:
+    # jump to point x1
+    self.tail.component = self.head.right.component.funс.move_to_x1(self.head.component) 
 ```  
   
 One step of the experiment is depicted in Fig.2.  
