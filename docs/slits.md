@@ -79,11 +79,39 @@ def one_tick(self):
 One step of the experiment is depicted in Fig.2.  
 ![Image](metaprg.png)
 Figure 2 - Single experiment  
+  
 
-
-The particle created and put to 'x0' point. Object2 (experimental install) send 'set_w(phi)' message to 'Mix' class wich set both 'w1' and 'w2' attributes. Further, Object2 create an 'a' object, where resolve the names conflict. Next step is execute 'move_to_x1' operation that put the particle to 'x1' point on screen.
+The particle created and put to 'x0' point. Object2 (experimental device) send 'set_z(phi)' message to 'Mix' class wich set both 'z1' and 'z2' attributes. Further, Object2 create an 'mix' object, where resolve the names conflict. Next step is execute 'move_to_x1' operation that put the particle to 'x1' point on screen.
 This process execute in 'Run' operation many times for get statistics.  
 We wach that here has  elements metaprogramming.  
+
+#### Quantum system
+The Mix class has only one task - to resolve the name conflict. To do this, we use multiple inheritance emulation. Let's introduce the function attribute to store the object-function .
+The emulation itself is performed as follows  
+``` python
+def __init__(self):
+  # Names conflict resolution
+  self.funс = None  # one of the alternatives
+  w = self.wa + self.wb
+  d = abs(w)**2
+  p = d.real /(4.0*c**2)
+  r = random.random()
+  if r<p:
+    rr = random.choice([0,1])
+    if rr == 0:
+      self.funс = A()  # inherits the operation from A
+    else:
+      self.funс = B() # inherits the operation from B
+        else:
+            self.func = None
+```  
+  
+The difference between emulation and true inheritance is that the k_x0 operation and the space model are not inherited by the Mix class, but are encapsulated in a function object. However, this does not affect the quality of the simulation.
+  
+  
+  
+  
+  
 The ontology is a similar an ontology of classical case but has  'Mix' class. The class inhered 'move_to_x1' operation from both 'A' and 'B' classes. In this case, we has conflict of the names. This conflict resolve as the quantom rule. The 'Mix' class has 'w1' and 'w2' attributes for the quantom rule.  
 
 
