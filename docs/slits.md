@@ -75,6 +75,7 @@ def one_tick(self):
     # jump to point x1
     self.tail.component = self.head.right.component.funс.move_to_x1(self.head.component) 
 ```  
+It is worth noting that in this case, a description is given of the sequence of events connected by cause-and-effect relationships. But these events are in no way ordered in time. The first three lines can be swapped, but the if block cannot be swapped.  
   
 One step of the experiment is depicted in Fig.2.  
 ![Image](metaprg.png)
@@ -108,7 +109,21 @@ def __init__(self):
   
 The difference between emulation and true inheritance is that the k_x0 operation and the space model are not inherited by the Mix class, but are encapsulated in a function object. However, this does not affect the quality of the simulation.
   
-  
+#### Alternatives
+Classes A and B define an operation with the same name, move_to_x1. This operation implements the movement of the particle from the source to the screen. Implementation will be as follows
+``` python
+def move_to_x1(self, p):
+  self.add(p)
+  self.Run()
+  return self.remove()
+```  
+          
+The implementation of the Run operation will be as follow
+``` python
+def Run(self): # <<Exist>>
+  """ Concept = particle displacement B """
+  self.tail = self.head
+```  
   
   
   
