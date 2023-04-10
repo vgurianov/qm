@@ -128,8 +128,13 @@ def Run(self): # <<Exist>>
   
 ## 3. Classical model
 The classical model assumes the scattering of classical particles by two slits. To do this, instead of alternatives and the Mix class, we use the OneClass class, which has two operations with different names move_to_x1 and move_to_x2. 
-The ontology is a similar an ontology of classical case but has  'Mix' class. 
-
+The ontology is a similar an ontology of classical case but has  'Mix' class.  
+Let's consider how space and time are described within the ontology.
+#### Space 
+The space is modeled by a linked list, each specific class has its own space, i.e. belongs to the namespace of the corresponding class. We postulate that 'head' and 'tail' are public attributes. Then the space of this model can be perceived as something integral. When moving from system to subsystem and vice versa, the scaling effect will appear. This corresponds to the generally accepted mathematical description of space.
+#### Time 
+In UML SP, parallel flows are associated with objects of ontology classes. One of the concurrent programming patterns is used. Simple examples are Single Threaded Execution and Producer-Consumer patterns. The time counter is set as a shared resource. Each thread is given the opportunity to execute a portion of the Run code. The meter reading will display the generally accepted mathematical model of time.
+Perhaps for a quantum system one should postulate the atomic nature of the Run procedure.
 
 ## 4. Experiments result
 Typical result of the experiment is depicted in Fig.3 (kn = 10 measurements for each value $$\varphi$$).
