@@ -87,13 +87,14 @@ This process execute in 'Run' operation many times for get statistics.
 We wach that here has  elements metaprogramming.  
 
 #### Quantum system
-The Mix class has only one task - to resolve the name conflict. To do this, we use multiple inheritance emulation. Let's introduce the function attribute to store the object-function .
+The Mix class has only one task - to resolve the name conflict. The class inhered 'move_to_x1' operation from both 'A' and 'B' classes. In this case, we has conflict of the names. This conflict resolve as the quantom rule. The 'Mix' class has 'z1' and 'z2' attributes for the quantom rule.  
+To do this, we use multiple inheritance emulation. Let's introduce the func attribute to store the object-function .
 The emulation itself is performed as follows  
 ``` python
 def __init__(self):
   # Names conflict resolution
   self.funс = None  # one of the alternatives
-  w = self.wa + self.wb
+  w = self.z1 + self.z2
   d = abs(w)**2
   p = d.real /(4.0*c**2)
   r = random.random()
@@ -102,9 +103,9 @@ def __init__(self):
     if rr == 0:
       self.funс = A()  # inherits the operation from A
     else:
-      self.funс = B() # inherits the operation from B
-        else:
-            self.func = None
+      self.funс = B()  # inherits the operation from B
+  else:
+    self.func = None
 ```  
   
 The difference between emulation and true inheritance is that the k_x0 operation and the space model are not inherited by the Mix class, but are encapsulated in a function object. However, this does not affect the quality of the simulation.
@@ -125,12 +126,12 @@ def Run(self): # <<Exist>>
   self.tail = self.head
 ```  
   
-  
-  
-The ontology is a similar an ontology of classical case but has  'Mix' class. The class inhered 'move_to_x1' operation from both 'A' and 'B' classes. In this case, we has conflict of the names. This conflict resolve as the quantom rule. The 'Mix' class has 'w1' and 'w2' attributes for the quantom rule.  
+## 3. Classical model
+The classical model assumes the scattering of classical particles by two slits. To do this, instead of alternatives and the Mix class, we use the OneClass class, which has two operations with different names move_to_x1 and move_to_x2. 
+The ontology is a similar an ontology of classical case but has  'Mix' class. 
 
 
-## 3. Experiments result
+## 4. Experiments result
 Typical result of the experiment is depicted in Fig.3 (kn = 10 measurements for each value $$\varphi$$).
 ![Image](slits_2a.png)
 Figure 3 - Experiment result  
@@ -141,7 +142,7 @@ Figure 4 - Classical experiment result
 
 Same  result can be get if 'A' and 'B' classes has different name of the operations (for instance, move_to_x1 and move_to_x2).  
 
-## 4. Software
+## 5. Software
 The complete code is here [https://github.com/vgurianov/qm/software/slits.py](https://github.com/vgurianov/qm/blob/master/software/slits.py).  
 
 Both classes A and B describe a paths from $$x_{0}$$ to $$x_{1}$$.  
