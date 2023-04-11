@@ -97,7 +97,7 @@ We wach that here has  elements metaprogramming.
 
 #### Quantum system
 The Mix class has only one task - to resolve the name conflict. The class inhered 'move_to_x1' operation from both 'A' and 'B' classes. In this case, we has conflict of the names. This conflict resolve as the quantom rule. The 'Mix' class has 'z1' and 'z2' attributes for the quantom rule.  
-To do this, we use multiple inheritance emulation. Let's introduce the func attribute to store the object-function .
+To do this, we use multiple inheritance emulation. Let's introduce the func attribute to store the object-function.
 The emulation itself is performed as follows  
 ``` python
 def __init__(self):
@@ -117,7 +117,7 @@ def __init__(self):
     self.func = None
 ```  
   
-The difference between emulation and true inheritance is that the k_x0 operation and the space model are not inherited by the Mix class, but are encapsulated in a function object. However, this does not affect the quality of the simulation.
+The difference between emulation and true inheritance is that the 'move_to_x1' operation and the space model are not inherited by the Mix class, but are encapsulated in a function object. However, this does not affect the quality of the simulation.
   
 #### Alternatives
 Classes A and B define an operation with the same name, move_to_x1. This operation implements the movement of the particle from the source to the screen. Implementation will be as follows
@@ -140,9 +140,13 @@ The classical model assumes the scattering of classical particles by two slits. 
 The ontology is a similar an ontology of classical case but has  'Mix' class.  
 Let's consider how space and time are described within the ontology.
 #### Space 
-The space is modeled by a linked list, each specific class has its own space, i.e. belongs to the namespace of the corresponding class. We postulate that 'head' and 'tail' are public attributes. Then the space of this model can be perceived as something integral. When moving from system to subsystem and vice versa, the scaling effect will appear. This corresponds to the generally accepted mathematical description of space.
+    The space is modeled by a linked list, each specific class has its own space, i.e. belongs to the namespace of the corresponding class. We postulate that 'head' and 'tail' are public attributes. Then the space of this model can be perceived as something integral. When moving from system to subsystem and vice versa, the scaling effect will appear. This corresponds to the generally accepted mathematical description of space.  
+    Let's explain this with the following example. Consider a model of a railway passenger train. A Frame 'Node' has a space from stantion A to stantion B. A 'Subnode' frame has a space that accommodate the locomotive and wagons. We can also consider Sub-Subnode. Then the space will be designed to accommodate the compartment.  
+    Space in quantum mechanics seems to be arranged in exactly the same way.
+
 #### Time 
-In UML SP, concurrent threads are associated with objects of classes. One of the concurrent programming patterns is used. Simple examples are Single Threaded Execution and Producer-Consumer patterns. The time counter is set as a global variable. Each thread is given the opportunity to execute a portion of the Run code. The meter reading will display the generally accepted mathematical model of time. Perhaps for a quantum system one should postulate the atomic nature of the Run procedure.  
+    In UML SP, concurrent threads are associated with objects of classes. One of the concurrent programming patterns is used. Simple examples are Single Threaded Execution and Producer-Consumer patterns. The time counter is set as a global variable. Each thread is given the opportunity to execute a portion of the Run code. The meter reading will display the generally accepted mathematical model of time.  
+    
 Perhaps for a quantum system one should postulate the atomic nature of the Run procedure.
 
 ## 4. Experiments result
