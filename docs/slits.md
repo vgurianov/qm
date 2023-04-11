@@ -58,6 +58,15 @@ A frame with <<Atom>> stereotype defines an atomic (indivisible) object. This el
 
 #### Double-path experiment and Space Cell
 The "Composite" frame define abstract 'Double-path experiment' concept. A frame with <<Category>> stereotype defines an abstract aggregate (composite object). A frame defines a container for atomic objects and subsystems. The frame defines the operations of adding and deleting objects. In this model, a linked list is used to store objects, the list is specified by the head and tail of the list. This list models a one-dimensional physical space and is inherited by concrete classes, with each class getting its own instance of the space.  
+In this case, the 'add' and 'remove' operations looks like
+``` python
+    def add(self, c):
+        self.head = c
+    def remove(self):
+        c = self.tail
+        self.tail = None
+        return c
+```
 
 #### Laboratory
 A frame with <<Context>> stereotype defines an boundary and initial conditions for the system under study. In fact, the experimental device is in relation to the composition with the context, although formally this is not the case.  
@@ -133,7 +142,7 @@ Let's consider how space and time are described within the ontology.
 #### Space 
 The space is modeled by a linked list, each specific class has its own space, i.e. belongs to the namespace of the corresponding class. We postulate that 'head' and 'tail' are public attributes. Then the space of this model can be perceived as something integral. When moving from system to subsystem and vice versa, the scaling effect will appear. This corresponds to the generally accepted mathematical description of space.
 #### Time 
-In UML SP, concurrent threads are associated with objects of ontology classes. One of the concurrent programming patterns is used. Simple examples are Single Threaded Execution and Producer-Consumer patterns. The time counter is set as a shared resource. Each thread is given the opportunity to execute a portion of the Run code. The meter reading will display the generally accepted mathematical model of time.
+In UML SP, concurrent threads are associated with objects of classes. One of the concurrent programming patterns is used. Simple examples are Single Threaded Execution and Producer-Consumer patterns. The time counter is set as a global variable. Each thread is given the opportunity to execute a portion of the Run code. The meter reading will display the generally accepted mathematical model of time. Perhaps for a quantum system one should postulate the atomic nature of the Run procedure.  
 Perhaps for a quantum system one should postulate the atomic nature of the Run procedure.
 
 ## 4. Experiments result
