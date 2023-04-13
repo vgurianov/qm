@@ -7,7 +7,7 @@ The double-slit experiment is a demonstration that light and matter can display 
 
 ## 1. Matematical description
 Let the particle get from the source $$x_{0}$$ to the point of the screen $$x_{1}$$ by two paths a and b.  
-Then the transition is described by the vron function
+Then the transition is described by the wave function
 
 $$|\psi\rangle = A_{a}|a\rangle + A_{b}|b\rangle ,$$
 
@@ -51,13 +51,13 @@ Figure 1 - The ontology of the experiment
 Let us give a brief description of the ontology concepts.  
 
 #### Physical matter
-The "Component" frame with the stereotype <<Substance>> defines the most general properties of all elements of the model. In this case, the "Run" operation is defined. This operation has a stereotype <<Exist>>, which determines the course of model time.  
+The 'Component' frame with the stereotype <<Substance>> defines the most general properties of all elements of the model. In this case, the 'Run' operation is defined. This operation has a stereotype <<Exist>>, which determines the course of model time.  
 
 #### Quantum particle
 A frame with <<Atom>> stereotype defines an atomic (indivisible) object. This element has much in common with ABS agents, but there are also differences. In this case, it is a point particle.  
 
 #### Double-path experiment and Space Cell
-The "Composite" frame define abstract 'Double-path experiment' concept. A frame with <<Category>> stereotype defines an abstract aggregate (composite object). A frame defines a container for atomic objects and subsystems. The frame defines the operations of adding and deleting objects. In this model, a linked list is used to store objects, the list is specified by the head and tail of the list. This list models a one-dimensional physical space and is inherited by concrete classes, with each class getting its own instance of the space.  
+The 'Composite' frame define abstract "Double-path experiment" concept. A frame with <<Category>> stereotype defines an abstract aggregate (composite object). A frame defines a container for atomic objects and subsystems. The frame defines the operations of adding and deleting objects. In this model, a linked list is used to store objects, the list is specified by the head and tail of the list. This list models a one-dimensional physical space and is inherited by concrete classes, with each class getting its own instance of the space.  
 In this case, the 'add' and 'remove' operations looks like
 ``` python
     def add(self, c):
@@ -91,12 +91,12 @@ One step of the experiment is depicted in Fig.2.
 Figure 2 - Single experiment  
   
 
-The particle created and put to 'x0' point. Object2 (experimental device) send 'set_z(phi)' message to 'Mix' class wich set both 'z1' and 'z2' attributes. Further, Object2 create an 'mix' object, where resolve the names conflict. Next step is execute 'move_to_x1' operation that put the particle to 'x1' point on screen.
+The particle created and put to 'x0' point. 'node' (experimental device) send 'set_z(phi)' message to 'Mix' class wich set both 'z1' and 'z2' attributes. Further, 'node' create an 'mix' object, where resolve the names conflict. Next step is execute 'move_to_x1' operation that put the particle to 'x1' point on screen.
 This process execute in 'Run' operation many times for get statistics.  
-We wach that here has  elements metaprogramming.  
+We observe that here has  elements metaprogramming.  
 
 #### Quantum system
-The Mix class has only one task - to resolve the name conflict. The class inhered 'move_to_x1' operation from both 'A' and 'B' classes. In this case, we has conflict of the names. This conflict resolve as the quantom rule. The 'Mix' class has 'z1' and 'z2' attributes for the quantom rule.  
+The 'Mix' class has only one task - to resolve the name conflict. The class inhered 'move_to_x1' operation from both 'A' and 'B' classes. In this case, we has conflict of the names. This conflict resolve as the quantom rule. The 'Mix' class has 'z1' and 'z2' attributes for the quantom rule.  
 To do this, we use multiple inheritance emulation. Let's introduce the func attribute to store the object-function.
 The emulation itself is performed as follows  
 ``` python
@@ -120,7 +120,7 @@ def __init__(self):
 The difference between emulation and true inheritance is that the 'move_to_x1' operation and the space model are not inherited by the Mix class, but are encapsulated in a function object. However, this does not affect the quality of the simulation.
   
 #### Alternatives
-Classes A and B define an operation with the same name, move_to_x1. This operation implements the movement of the particle from the source to the screen. Implementation will be as follows
+Classes 'A' and 'B' define an operation with the same name, 'move_to_x1'. This operation implements the movement of the particle from the source to the screen. Implementation will be as follows
 ``` python
 def move_to_x1(self, p):
   self.add(p)
@@ -136,7 +136,7 @@ def Run(self): # <<Exist>>
 ```  
   
 ## 3. Classical model
-The classical model assumes the scattering of classical particles by two slits. To do this, instead of alternatives and the Mix class, we use the OneClass class, which has two operations with different names move_to_x1 and move_to_x2. 
+The classical model assumes the scattering of classical particles by two slits. To do this, instead of alternatives and the Mix class, we use the 'OneClass' class, which has two operations with different names 'move_to_x1' and 'move_to_x2'. 
 The ontology is a similar an ontology of quantum case but has  'OneClass' class.  
 Let's consider how space and time are described within the ontology.
 #### Space 
@@ -158,7 +158,7 @@ Classical case is depicted in Fig.4. Classical experiment hasn't 'Mix' class and
 ![Image](slits_2b.png)
 Figure 4 - Classical experiment result  
 
-Same  result can be get if 'A' and 'B' classes has different name of the operations (for instance, move_to_x1 and move_to_x2).  
+Same  result can be get if 'A' and 'B' classes has different name of the operations (for instance, 'move_to_x1' and 'move_to_x2').  
 
 ## 5. Software
 The complete code is here [https://github.com/vgurianov/qm/software/slits.py](https://github.com/vgurianov/qm/blob/master/software/slits.py).  
