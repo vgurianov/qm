@@ -1,5 +1,6 @@
 # Double-Slit Experiment  
 <!---
+terms
 https://en.wikipedia.org/wiki/Double-slit_experiment
 https://en.wikipedia.org/wiki/Quantum_superposition
 -->
@@ -140,14 +141,15 @@ The classical model assumes the scattering of classical particles by two slits. 
 The ontology is a similar an ontology of quantum case but has  'OneClass' class.  
 Let's consider how space and time are described within the ontology.
 #### Space 
-The space is modeled by a linked list, each specific class has its own space, i.e. belongs to the namespace of the corresponding class. We postulate that 'head' and 'tail' are public attributes. Then the space of this model can be perceived as something integral. When moving from system to subsystem and vice versa, the scaling effect will appear. This corresponds to the generally accepted mathematical description of space.  
+The space is modeled by a linked list, each specific class has its own space, i.e. belongs to the namespace of the corresponding class. We postulate that 'head' and 'tail' are public attributes. Then the space of this model can be perceived as something integral. When moving from system to subsystem and vice versa, the scaling effect will appear. Математической моделью этой конструкции является евклидово пространство.   
 Let's explain this with the following example. Consider a model of a railway passenger train. A Frame 'Node' has a space from stantion A to stantion B. A 'Subnode' frame has a space that accommodate the locomotive and wagons. We can also consider Sub-Subnode. Then the space will be designed to accommodate the compartment. The context space is represented by one space cell and is designed to accommodate the entire system. But from the context it is possible to look at all spaces of subsystems.   
 Space in quantum mechanics seems to be arranged in exactly the same way.
 
 #### Time 
 In UML SP, concurrent threads are associated with objects of classes. One of the concurrent programming patterns is used. Simple examples are Single Threaded Execution and Producer-Consumer patterns. The time counter is set as a global variable. Each thread is given the opportunity to execute a portion of the Run code. The meter reading will display the generally accepted mathematical model of time.  
-    
-Perhaps for a quantum system one should postulate the atomic nature of the Run procedure.
+Perhaps for a quantum system one should postulate the atomic nature of the Run procedure.  
+  
+Newtonian space and time should be viewed more as an epistemological entity, since they are used solely for measurements.  
 
 ## 4. Experiments result
 Typical result of the experiment is depicted in Fig.3 (kn = 10 measurements for each value $$\varphi$$).
