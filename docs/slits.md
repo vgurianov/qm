@@ -135,6 +135,9 @@ def Run(self): # <<Exist>>
   """ Concept = particle displacement B """
   self.tail = self.head
 ```  
+    
+    
+Finishing the description of the ontology, we note that the ontology cannot be considered complete, since there are a number of unresolved issues. These issues will be discussed separately in the "Resume" subsection.  
   
 ## 3. Classical model
 The classical model assumes the scattering of classical particles by two slits. To do this, instead of alternatives and the Mix class, we use the 'OneClass' class, which has two operations with different names 'move_to_x1' and 'move_to_x2'. 
@@ -148,6 +151,7 @@ In UML SP, concurrent threads are associated with objects of classes. One of the
 Perhaps for a quantum system one should postulate the atomic nature of the Run procedure.  
   
 Newtonian space and time should be viewed more as an epistemological entity, since they are used solely for measurements.  
+
 
 ## 4. Experiments result
 Simulation should be considered as the terminal stage of inference in frame networks.
