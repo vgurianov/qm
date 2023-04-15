@@ -168,6 +168,8 @@ Same  result can be get if 'A' and 'B' classes has different name of the operati
 ## 5. Software
 The complete code is here [https://github.com/vgurianov/qm/software/slits.py](https://github.com/vgurianov/qm/blob/master/software/slits.py).  
 
+Python 3.10  
+    
 The following packages are required to run the module:
 - matplotlib.pyplot
 - scipy
