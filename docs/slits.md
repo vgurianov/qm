@@ -58,7 +58,7 @@ The 'Component' frame with the stereotype <<Substance>> defines the most general
 A frame with <<Atom>> stereotype defines an atomic (indivisible) object. This element has much in common with ABS agents, but there are also differences. In this case, it is a point particle.  
 
 #### Double-path experiment and Space Cell
-The 'Composite' frame define abstract "Double-path experiment" concept. A frame with <<Category>> stereotype defines an abstract aggregate (composite object). A frame defines a container for atomic objects and subsystems. The frame defines the operations of adding and deleting objects. In this model, a linked list is used to store objects, the list is specified by the head and tail of the list. This list models a one-dimensional physical space and is inherited by concrete classes, with each class getting its own instance of the space.  
+The 'Composite' frame define abstract "Double-path experiment" concept. A frame with <<Category>> stereotype defines an abstract aggregate (composite object). A frame defines a container for atomic objects and subsystems. The frame defines the operations of adding and removing objects. In this model, a linked list is used to store objects, the list is specified by the head and tail of the list. This list models a one-dimensional physical space and is inherited by concrete classes, with each class getting its own instance of the space.  
 In this case, the 'add' and 'remove' operations looks like
 ``` python
     def add(self, c):
@@ -168,8 +168,9 @@ Same  result can be get if 'A' and 'B' classes has different name of the operati
 ## 5. Software
 The complete code is here [https://github.com/vgurianov/qm/software/slits.py](https://github.com/vgurianov/qm/blob/master/software/slits.py).  
 
-Both classes A and B describe a paths from $$x_{0}$$ to $$x_{1}$$.  
-The 'Mix' class describe wave function $$|\psi\rangle$$. The function has 'wa' and 'wb' atributes. It are coeficents of the wave function. In the function '__init__' operation resolve the conflict names 'move_to_x1'.  
-The 'Node' class simulate a experimental device.  
-  
+The following packages are required to run the module:
+- matplotlib.pyplot
+- scipy
+
+    
 
