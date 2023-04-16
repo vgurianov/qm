@@ -1,4 +1,4 @@
-# Superposition
+# Quantum Superposition
 Let us describe the method that is used to construct a frame network.
 Let entity A have the same mathematical model as entity B. Then, by conducting full-scale experiments on one of these entities, one can obtain information about the other, including quantitative data.
 For example, an oscillatory circuit and a pendulum have the same mathematical model. By conducting experiments on an oscillatory circuit, it is possible to calculate the characteristics of the pendulum.
@@ -13,7 +13,7 @@ Superposition analog is multiple inheritances. If the classes have attributes or
 
  The diagram shows two states 0 and 1. The states have an attribute with the same name Attribute. In this case, there is a naming conflict in the Leaf class. To resolve the conflict, we use the complex numbers w1 and w2. The squares of these numbers give the probability of finding a state 0 or 1. In the general case, this is an analogue of the Hilbert's space.  
 
- You can implement it like this
+ You can implement it like this (multiple inheritances imulation)
 ``` python
  def __init__(self):
     w = self.w1
@@ -25,6 +25,6 @@ Superposition analog is multiple inheritances. If the classes have attributes or
     else:
         self.Attribute = Class2.Attribute
 ```
-Note that in Python, the name conflict is resolved simply - the value of the attribute of the first class in the inheritance list is assigned. We are redefining this rule. It is also worth noting that in this case we are assigning a value to an attribute of an object, not a class.  
+Note that in Python, the name conflict is resolved simply, the value of the attribute of the first class in the inheritance list is assigned. We are redefining this rule. It is also worth noting that in this case we are assigning a value to an attribute of an object, not a class.  
 
 The complete code is here [https://github.com/vgurianov/qm/software/states.py](https://github.com/vgurianov/qm/blob/master/software/states.py).
