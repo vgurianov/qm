@@ -13,7 +13,7 @@ Superposition analog is multiple inheritances. If the classes have attributes or
 
  The diagram shows two states 0 and 1. The states have an attribute with the same name Attribute. In this case, there is a naming conflict in the Leaf class. To resolve the conflict, we use the complex numbers w1 and w2. The squares of these numbers give the probability of finding a state 0 or 1. In the general case, this is an analogue of the Hilbert's space.  
 
- You can implement it like this (multiple inheritances imulation)
+ You can implement it like this (multiple inheritances emulation)
 ``` python
  def __init__(self):
     w = self.w1
