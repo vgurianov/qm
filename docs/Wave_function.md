@@ -22,4 +22,18 @@ The measurement procedure is shown in Fig.2
 Figure 2: The wavefunction collapse  
 
 
-The measurement results upon collapse of the wave function can vary, but the outcome after collapse will remain the same. If we were to repeat the measurement, we would obtain the same value every time for the measured property.
+The measurement results upon collapse of the wave function can vary, but the outcome after collapse will remain the same. If we were to repeat the measurement, we would obtain the same value every time for the measured property.  
+
+## References  
+1. Wolfram S.: A New Kind of Science, free E-Book, 2002, 
+Available from: https://www.wolframscience.com/nks/
+2. Wolfram S.: A Class of Models with the Potential to Represent Fundamental Physics, arXiv:2004.08210, 2020, Available from: 
+https://doi.org/10.48550/arXiv.2004.08210
+3. Hooft G.: The Cellular Automaton Interpretation of Quantum Mechanics, arXiv:1405.1548, 2015, Available from: 
+https://doi.org/10.48550/arXiv.1405.1548
+4. Harre R.: Intern.Studies in the Phil. of Science, V.4,2,1990.
+5. Sevalnikov A.Y.: Interpretations of quantum mechanics: In search of a new ontology. M.: Book house ''LIBROKOM'', 2009.
+6. Feynman R, Leighton R, and Sands M. The Feynman Lectures on Physics, Volume 3: Quantum mechanics. NEW MILLENNIUM EDITION
+7. Penrose R.: The Road to Reality: A Complete Guide to the Laws of the Universe, 	Jonathan Cape, 2004 %(Entangled P.582, EPR P.585)
+8. D'Espagnat B. (1979): The Quantum Theory and Reality, Scientific American: 241 (5): 158–181, Available from: http://www.sciam.com/media/pdf/197911\_0158.pdf
+
