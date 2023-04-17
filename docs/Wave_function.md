@@ -1,4 +1,4 @@
-## Wave function and wave function collapse
+# Wave Function And Wave Function Collapse
 A number of scientists have developed the idea that algorithms can be used to describe physical phenomena. In greatest detail this idea is described in books by Stefan Wolfram [1, 2]. In these books, using graphs (networks) as a basis for representing nature and then deriving the laws of physics from algorithms using the graphs has been proposed. A similar point of view is stated in G. Hooft's book [3].  
   
 Our approach develops this idea further on the basis of an object-oriented paradigm. Instead of algorithms, we propose considering the exchange of messages between objects. Since objects are instances of classes, and links (communications) are instances of associations, the scientific model can be described as a frame semantic network, in particular it can be seen as an ontological description.  
