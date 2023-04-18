@@ -4,7 +4,7 @@ terms
 https://en.wikipedia.org/wiki/Double-slit_experiment
 https://en.wikipedia.org/wiki/Quantum_superposition
 -->
-The double-slit experiment is a demonstration that light and matter can display characteristics of both classically defined waves and particles. In 1927, Davisson and Germer demonstrated that electrons show the same behavior.
+The double-slit experiment is a demonstration that light and matter can display characteristics of both classically defined waves and particles. In 1927, Davisson and Germer demonstrated that electrons show the same behavior [1].
 
 ## 1. Matematical description
 Let the particle get from the source $$x_{0}$$ to the point of the screen $$x_{1}$$ by two paths a and b.  
@@ -174,5 +174,7 @@ The following packages are required to run the module:
 - matplotlib.pyplot
 - scipy
 
-    
+ ## References  
+1. Feynman R, Leighton R, and Sands M. The Feynman Lectures on Physics, Volume 3: Quantum mechanics. NEW MILLENNIUM EDITION
+  
 
