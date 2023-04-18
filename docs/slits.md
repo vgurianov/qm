@@ -174,7 +174,7 @@ The following packages are required to run the module:
 - matplotlib.pyplot
 - scipy
 
- ## References  
+## References  
 1. Feynman R, Leighton R, and Sands M. The Feynman Lectures on Physics, Volume 3: Quantum mechanics. NEW MILLENNIUM EDITION
   
 
