@@ -7,8 +7,8 @@ The choice of concepts for models of quantum effects is based on one or another 
 
 Following the tradition of programming languages such as the Smalltalk and  Python, we will treat both the classes themselves and class instances as objects. Class instances will be interpreted as objects of reality in the classical sense, and classes will be interpreted as objects that exist in possibility. Classes can also create new objects-class, so there won't be an endless chain of metaclasses.  
   
-Wave function analog is a class, Fig.1.  This figure shows a frame named Frame1, which is rendered as a "Class" UML-element. The Frame1 is assigned the concept "Wave function". This concept has the designation ID (ID may not match Frame1).  
-Wave function collapse analog is to run constructor of the class and create an object, i.e. instance of the class. However, it is more correct to say so. The wave function is a way of mathematically describing a class.   
+Wave function analog is a class, Fig.1.  This figure shows a frame named Frame1, which is rendered as a "Class" UML-element. The Frame1 is assigned the concept "Wave function". This concept has the designation ID (ID may not match Frame1). Wave function collapse analog is to run constructor of the class and create an object, i.e. instance of the class.  
+However, it is more correct to say so. The wave function is a way of mathematically describing a class.   
 
 ![Image](colapse1.png)  
 
