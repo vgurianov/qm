@@ -144,7 +144,7 @@ Finishing the description of the ontology, we note that the ontology cannot be c
 ## 3. Classical model
 The classical model assumes the scattering of classical particles by two slits. To do this, instead of alternatives and the Mix class, we use the 'OneClass' class, which has two operations with different names 'move_to_x1' and 'move_to_x2'. 
 The ontology is a similar an ontology of quantum case but has  'OneClass' class.
-The procedure oo in this case will be
+The procedure 'one_tick' has the form
 ``` python 
     def one_tick(self): 
         #self.head.component = Leaf() # create particle
