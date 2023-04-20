@@ -78,12 +78,14 @@ The "Node" frame define concrete double-slit experiment. Operation 'Run' describ
   
 ``` python 
 def one_tick(self): 
-  self.head.component = Leaf() # create particle
-  self.tail.component = None   # clear detector
-  self.head.right.component = Mix()   # name conflict resolved
-  if self.head.right.component.funс is not None:
-    # jump to point x1
-    self.tail.component = self.head.right.component.funс.move_to_x1(self.head.component) 
+    #self.head.component = Leaf() # create particle
+    self.add(Leaf())
+    #self.tail.component = None   # clear detector
+    self.remove()
+    self.head.right.component = Mix()   # name conflict resolved
+    if self.head.right.component.funс is not None:
+        # jump to point x1
+        self.tail.component = self.head.right.component.funс.move_to_x1(self.head.component) 
 ```  
 It is worth noting that in this case, a description is given of the sequence of events connected by cause-and-effect relationships. But these events are in no way ordered in time. The first three lines can be swapped, but the if block cannot be swapped.  
   
@@ -141,7 +143,39 @@ Finishing the description of the ontology, we note that the ontology cannot be c
   
 ## 3. Classical model
 The classical model assumes the scattering of classical particles by two slits. To do this, instead of alternatives and the Mix class, we use the 'OneClass' class, which has two operations with different names 'move_to_x1' and 'move_to_x2'. 
-The ontology is a similar an ontology of quantum case but has  'OneClass' class.  
+The ontology is a similar an ontology of quantum case but has  'OneClass' class.
+The procedure oo in this case will be
+``` python 
+    def one_tick(self): 
+        #self.head.component = Leaf() # create particle
+        self.add(Leaf())
+        #self.tail.component = None   # clear detector
+        self.remove()
+        self.head.right.component = OneClass()   # classical case
+        self.tail.component = self.head.right.component.move(self.head.component) # jump to point x1
+```    
+The 'OneClass' class 'Run' procedure has the form
+``` python 
+    def Run(self): # <<Exist>>
+        p = (c*c + c*c)/(4.0*c**2)  # norm 1
+        #print(p, pp)
+        r = random.random()
+        if r<p:
+            rr = random.choice([0,1])
+            if rr == 0:
+                self.tail.component = self.move_to_x1(self.head.component)  # Path A
+            else:
+                self.tail.component = self.move_to_x2(self.head.component)  # Path B
+        else:
+            self.tail.component = None
+
+    def move(self, p):
+        self.add(p)
+        self.Run()
+        return self.remove()
+    
+```  
+                
 Let's consider how space and time are described within the ontology.
 #### Space 
 The space is modeled by a linked list, each specific class has its own space, i.e. belongs to the namespace of the corresponding class. We postulate that 'head' and 'tail' are public attributes. Then the space of this model can be perceived as something integral. When moving from system to subsystem and vice versa, the scaling effect will appear. The mathematical model of this construction is the Euclidean space.   
