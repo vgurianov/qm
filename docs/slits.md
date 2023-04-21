@@ -175,6 +175,8 @@ The 'OneClass' class 'Run' procedure has the form
         return self.remove()
     
 ```  
+The difference between the quantum and classical models lies in the fact that in the first case the choice is made at the moment of collapse of the wave function, in the second case, at the moment of displacement particle.  
+                
 Note that in the classical case, the ontology can be written in the same form as in the quantum case, which seems to be more correct. However, there will be no name conflict and no quantum effects will be observed. Nevertheless, the model with exactly one class corresponds to the classical description.   
   
 Let's consider how space and time are described within the ontology.
