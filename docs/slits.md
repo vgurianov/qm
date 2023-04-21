@@ -175,7 +175,8 @@ The 'OneClass' class 'Run' procedure has the form
         return self.remove()
     
 ```  
-                
+Note that in the classical case, the ontology can be written in the same form as in the quantum case, which seems to be more correct. However, there will be no name conflict and no quantum effects will be observed. Nevertheless, the model with exactly one class corresponds to the classical description.   
+  
 Let's consider how space and time are described within the ontology.
 #### Space 
 The space is modeled by a linked list, each specific class has its own space, i.e. belongs to the namespace of the corresponding class. We postulate that 'head' and 'tail' are public attributes. Then the space of this model can be perceived as something integral. When moving from system to subsystem and vice versa, the scaling effect will appear. The mathematical model of this construction is the Euclidean space.   
