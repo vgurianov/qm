@@ -29,7 +29,46 @@ In our opinion, yes. Really.
 We observe objects-instance  because every classical object has at least three methods: set() for assigning a value to an attribute (impact), get() for getting an attribute value (measurement), and Run() for changing state over time.
 Object-class must also have the same methods. But only now it will be the attributes and methods of the class. Their purpose is exactly the same. The Ran() class method is necessary for the wave function to obey the time-dependent Schrödinger equation.
 Let us explain this with a well-known example. Let particles with spin 1/2 fall into the Stern-Gerlach device. In this case, we will have two streams of particles with a spin projection of +1/2 and -1/2. This situation is modeled by the set() message . If we put the second Stern-Gerlach device in the path of one of the beams, then only one detector (+1/2 or -1/2) will always work. This situation is modeled by the get() message. Here we ask the question "Does the particle have a spin of +1/2 (-1/2)?" And we get the answer in the form of Yes / No.  
-Thus, for objects-class, the observation conditions are exactly the same as for objects-instance.
+Thus, for objects-class, the observation conditions are exactly the same as for objects-instance.  
+
+In code, this can be done like this  
+``` python
+class Class1:
+
+    # атрибут данных (переменная класса), 
+    # общая для всех экземпляров класса
+    attribute = None
+
+    @classmethod
+    def Run(cls):
+        pass
+    @classmethod
+    def set(cls, v):
+        cls.attribute = v
+    @classmethod
+    def get(cls):
+        return cls.attribute
+    
+    def __init__(self, name):
+        # переменная экземпляра класса
+        # уникальна для каждого экземпляра
+        self.name = name
+        print(self.name) # печатает атрибут класса
+
+Class1.set(+1)
+print(Class1.get())
+i = Class1('a')
+j = Class1('b')
+print(i.attribute,j.attribute )
+```
+Execution result  
+``` 
+===================== RESTART: 
+1
+a
+b
+1 1
+```  
 
 ## References  
 1. Wolfram S.: A New Kind of Science, free E-Book, 2002, 
