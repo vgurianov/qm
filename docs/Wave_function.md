@@ -35,38 +35,42 @@ In code, this can be done like this
 ``` python
 class Class1:
 
-    # атрибут данных (переменная класса), 
-    # общая для всех экземпляров класса
+    # data attribute (class variable) common to all instances of the class
     attribute = None
 
     @classmethod
     def Run(cls):
         pass
     @classmethod
-    def set(cls, v):
+    def cset(cls, v):
         cls.attribute = v
     @classmethod
-    def get(cls):
+    def cget(cls):
         return cls.attribute
     
     def __init__(self, name):
-        # переменная экземпляра класса
-        # уникальна для каждого экземпляра
+        # class instance variable is unique for each instance
         self.name = name
-        print(self.name) # печатает атрибут класса
+        print(self.name) 
+    def set(self, name):
+        self.name = name
+    def get(self):
+        return self.name
+    
 
-Class1.set(+1)
-print(Class1.get())
-i = Class1('a')
-j = Class1('b')
+Class1.cset(+1)
+print(Class1.cget())
+i = Class1('i')
+j = Class1('j')
 print(i.attribute,j.attribute )
+
 ```
 Execution result  
 ``` 
 ===================== RESTART: 
 1
-a
-b
+i
+j
 1 1
 ```  
 
