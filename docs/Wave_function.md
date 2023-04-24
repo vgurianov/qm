@@ -75,6 +75,10 @@ i 1
 j 1
 1 1
 ```  
+The question naturally arises: "Where are objects-class ?".  
+In Python, classes are in a Dictionary or Map container because they are called by name.  
+In subsection "Non-numerical model" the model without complex numbers is considered. There, objects-class are stored in a looped list, and access to them is implemented by shifting the list.  
+An analysis of the literature on this issue showed that at the moment there is no answer to this question.
 
 ## References  
 1. Wolfram S.: A New Kind of Science, free E-Book, 2002, 
