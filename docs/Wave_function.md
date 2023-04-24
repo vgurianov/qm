@@ -7,7 +7,7 @@ The choice of concepts for models of quantum effects is based on one or another 
 
 Following the tradition of programming languages such as the Smalltalk and  Python, we will treat both the classes themselves and class instances as objects. Class instances will be interpreted as objects of reality in the classical sense, and classes will be interpreted as objects that exist in possibility. Classes can also create new objects-class, so there won't be an endless chain of metaclasses.  
   
-Wave function analog is a class, Fig.1.  This figure shows a frame named Frame1, which is rendered as a "Class" UML-element. The Frame1 is assigned the concept "Wave function". This concept has the designation ID (ID may not match Frame1). Wave function collapse analog is to run constructor of the class and create an object, i.e. instance of the class.  
+Wave function analog is a class, Fig.1.  This figure shows a frame named Frame1, which is rendered as a "Class" UML-element. The Frame1 is assigned the concept "Wave function". This concept has the designation ID (ID may not match Frame1). Wave function collapse analog is to run constructor of the class and create an instance of the class.  
 However, it is more correct to say so. The wave function is a way of mathematically describing a class.   
 
 ![Image](colapse1.png)  
@@ -27,7 +27,7 @@ The measurement results upon collapse of the wave function can vary, but the out
 Is it possible to observe objects-class ?  
 In our opinion, yes. Really.  
 We observe objects-instance  because every classical object has at least three methods: set() for assigning a value to an attribute (impact), get() for getting an attribute value (measurement), and Run() for changing state over time.
-Object-class must also have the same methods. But only now it will be the attributes and methods of the class. Their purpose is exactly the same. The Ran() class method is necessary for the wave function to obey the time-dependent Schrödinger equation.
+Object-class must also have the same methods. But only now it will be the attributes and methods of the class. Their purpose is exactly the same. The Ran() class method is necessary for the wave function to obey the time-dependent Schrödinger equation.  
 Let us explain this with a well-known example. Let particles with spin 1/2 fall into the Stern-Gerlach device. In this case, we will have two streams of particles with a spin projection of +1/2 and -1/2. This situation is modeled by the set() message . If we put the second Stern-Gerlach device in the path of one of the beams, then only one detector (+1/2 or -1/2) will always work. This situation is modeled by the get() message. Here we ask the question "Does the particle have a spin of +1/2 (-1/2)?" And we get the answer in the form of Yes / No.  
 Thus, for objects-class, the observation conditions are exactly the same as for objects-instance.  
 
@@ -78,7 +78,7 @@ j 1
 The question naturally arises: "Where are objects-class ?".  
 In Python, classes are in a Dictionary or Map container because they are called by name.  
 In subsection "Non-numerical model" the model without complex numbers is considered. There, objects-class are stored in a looped list, and access to them is implemented by shifting the list.  
-An analysis of the literature on this issue showed that at the moment there is no answer to this question.
+An analysis of the literature [5, 7] on this issue showed that at the moment there is no answer to this question.
 
 ## References  
 1. Wolfram S.: A New Kind of Science, free E-Book, 2002, 
