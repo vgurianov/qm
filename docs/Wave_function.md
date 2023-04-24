@@ -39,7 +39,7 @@ class Class1:
     attribute = None
 
     @classmethod
-    def Run(cls):
+    def cRun(cls):
         pass
     @classmethod
     def cset(cls, v):
@@ -51,11 +51,13 @@ class Class1:
     def __init__(self, name):
         # class instance variable is unique for each instance
         self.name = name
-        print(self.name) 
+        print(self.name, self.attribute) 
     def set(self, name):
         self.name = name
     def get(self):
         return self.name
+    def Run(cls):
+        pass
     
 
 Class1.cset(+1)
@@ -69,8 +71,8 @@ Execution result
 ``` 
 ===================== RESTART: 
 1
-i
-j
+i 1
+j 1
 1 1
 ```  
 
