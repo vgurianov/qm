@@ -25,7 +25,45 @@ or
 \end{equation}  
 
 ## 2. Semantic Net Description
-Wave function as a semantic net is depicted in the picture Fig.5
+Let a point particle be in two basic states ZERO and ONE.  
+``` python
+class State(Enum):
+        ZERO = 1
+        ONE = 2
+
+class Leaf0(Component): # <<Atom>>
+    """ Concept = Particle in the base state 0 """
+    def __init__(self):
+        self.state = State.ZERO
+class Leaf1(Component): # <<Atom>>
+    """ Concept = Particle in the base state 1 """
+    def __init__(self):
+        self.state = State.ONE
+
+```  
+Then a quantum particle can be defined as follows
+``` python
+class MixOne(Leaf0, Leaf1):
+    """ Concept = Quantum particle """
+    w0 = (1.0/math.sqrt(2.0))*complex(math.cos(0.0), math.sin(0.0))
+    w1 = (1.0/math.sqrt(2.0))*complex(math.cos(0.0), math.sin(0.0))
+    
+    def __init__(self):
+        random.seed()
+        p = self.w0.conjugate()*self.w0
+        p = abs(self.w0.real)**2
+        r = random.random()
+        print (p,r)
+        if r <= p.real:
+            self.struc = Leaf0() 
+        else:
+            self.struc = Leaf1() 
+```  
+To do this, we use multiple inheritance emulation. Let's introduce the 'struc' attribute to store the object-structure. The difference between emulation and true inheritance is that the 'state' attribute is not inherited by the 'MixOne' class, but is encapsulated in a object-structure.  
+
+
+Let us now consider how a composite quantum object can be created.
+Wave function as a frame net is depicted in the picture Fig.5
 
 ![Image](entanglement_1.png)
 Fig.5. The entanglement wave function
