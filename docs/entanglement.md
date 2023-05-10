@@ -89,16 +89,11 @@ class Mix(Two00,Two01,Two10,Two11):  # <<System>>
     def __init__(self):
         
         random.seed()
-        #p = self.w0.conjugate()*self.w0
         p00 = abs(self.w00)**2
-        #p = self.w0.conjugate()*self.w0
         p01 = abs(self.w01)**2
-        #p = self.w0.conjugate()*self.w0
         p10 = abs(self.w10)**2
-        #p = self.w0.conjugate()*self.w0
         p11 = abs(self.w11)**2
         r = random.random()
-        #print (p,r)
         if r <= p00:
             t = Two00()
         elif r > p00 and r <= p01+p00:
@@ -111,6 +106,36 @@ class Mix(Two00,Two01,Two10,Two11):  # <<System>>
         self.tail = t.tail.component
 ```  
 The difference between emulation and true inheritance is that the 'head' and 'tail' attributes are not inherited by the 'Mix' class, but is encapsulated in a object-structure.  
+We introduce the global variable PP to model quantum nonlocality.  
+Particle state measurement activities are encapsulated in classes A and B  
+``` python
+class A(object): # <<System>>, Concept = Alice
+    def __init__(self):
+        pass
+
+    def Run(self):
+        global PP
+        PP = Mix() # the wave function collapse
+        self.m1 = PP.head.state  # measurement
+        return self.m1
+
+    def accept(self, _m): # accept measurement
+        self.m2 = _m  
+
+
+class B(object): # <<System>>, Concept = Bob
+    def __init__(self):
+        pass
+        
+    def Run(self):
+        # Bob
+        global PP
+        self.m2 = PP.tail.state # measurement
+        return self.m2
+
+    def accept(self, _m): # accept measurement
+        self.m1 = _m  
+```  
 The message exchange order will be as follows,Fig.6.
 
 ![Image](entanglement_2.png)  
