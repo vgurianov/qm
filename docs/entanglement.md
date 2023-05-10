@@ -68,6 +68,49 @@ Wave function as a frame net is depicted in the picture Fig.5
 ![Image](entanglement_1.png)
 Fig.5. The entanglement wave function
 
+Let us compose the base states as possible alternatives. To create basic states, let's place the particles in the extreme cells of space. For example, the base state $$|01\rangle$$ would be defined by the following code  
+``` python
+class Two01(Composite):
+    def __init__(self): # <<System>>
+        super().__init__(3) # run __init__ from Composite
+        self.head.component = Leaf0()
+        self.tail.component = Leaf1()
+```  
+It should be noted that in this case, the basic states 'Leaf0' and 'Leaf1' are used, and not 'MixOne'.  
+Let's emulate multiple inheritance, for this we will introduce the fields 'head' and 'tail'  
+``` python
+class Mix(Two00,Two01,Two10,Two11):  # <<System>>
+    # entaglement:
+    w00 = 0.0*complex(math.cos(0.0), math.sin(0.0))
+    w01 = (1.0/math.sqrt(2.0))*complex(math.cos(0.0), math.sin(0.0))
+    w10 = (1.0/math.sqrt(2.0))*complex(math.cos(0.0), math.sin(0.0))
+    w11 = 0.0*complex(math.cos(0.0), math.sin(0.0))
+
+    def __init__(self):
+        
+        random.seed()
+        #p = self.w0.conjugate()*self.w0
+        p00 = abs(self.w00)**2
+        #p = self.w0.conjugate()*self.w0
+        p01 = abs(self.w01)**2
+        #p = self.w0.conjugate()*self.w0
+        p10 = abs(self.w10)**2
+        #p = self.w0.conjugate()*self.w0
+        p11 = abs(self.w11)**2
+        r = random.random()
+        #print (p,r)
+        if r <= p00:
+            t = Two00()
+        elif r > p00 and r <= p01+p00:
+            t = Two01()
+        elif r > p01+p00 and r <= p10+p01+p00:
+            t = Two10()
+        else:
+            t = Two11()
+        self.head = t.head.component
+        self.tail = t.tail.component
+```  
+The difference between emulation and true inheritance is that the 'head' and 'tail' attributes are not inherited by the 'Mix' class, but is encapsulated in a object-structure.  
 The message exchange order will be as follows,Fig.6.
 
 ![Image](entanglement_2.png)  
