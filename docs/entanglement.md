@@ -59,7 +59,7 @@ class MixOne(Leaf0, Leaf1):
         else:
             self.struc = Leaf1() 
 ```  
-We use multiple inheritance emulation. Let's introduce the 'struc' attribute to store the object-structure. The difference between emulation and true inheritance is that the 'state' attribute is not inherited by the 'MixOne' class, but is encapsulated in a object-structure.  
+Here we have a name conflict ('state' attribute and 'Run' operation). We use multiple inheritance emulation. Let's introduce the 'struc' attribute to store the object-structure. The difference between emulation and true inheritance is that the 'state' attribute is not inherited by the 'MixOne' class, but is encapsulated in a object-structure.  
 
 
 Let us now consider how a composite quantum object can be created.
