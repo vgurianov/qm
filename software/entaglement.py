@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# Quantum entanglement simulation
+# Quantum entanglement simulation, var 2
 #
 # (C) 2023 Vasyliy I. Gurianov
 # Github: https://github.com/vgurianov/qm/entanglement.py
@@ -9,16 +9,31 @@
 
 import math
 import random
+from enum import Enum
+     
+class State(Enum):
+        ZERO = 1
+        ONE = 2
 
-class State0(object):
-    attribute = 0
+class Component(object): # <<Substance>>
+    """ Concept = Physical Matter """
     def __init__(self):
-        self.attr = State0.attribute
-class State1(object):
-    attribute = 1
+        pass
+    def Run(self):
+        pass
+
+class Leaf0(Component): # <<Atom>>
+    """ Concept = Particle in the base state 0 """
     def __init__(self):
-        self.attr = State1.attribute
-class Leaf(State0, State1):
+        self.state = State.ZERO
+class Leaf1(Component): # <<Atom>>
+    """ Concept = Particle in the base state 1 """
+    def __init__(self):
+        self.state = State.ONE
+
+
+class MixOne(Leaf0, Leaf1):
+    """ Concept = Quantum particle """
     w0 = (1.0/math.sqrt(2.0))*complex(math.cos(0.0), math.sin(0.0))
     w1 = (1.0/math.sqrt(2.0))*complex(math.cos(0.0), math.sin(0.0))
     
@@ -29,38 +44,73 @@ class Leaf(State0, State1):
         r = random.random()
         print (p,r)
         if r <= p.real:
-            self.attr = 0 #State0.attribute
+            self.struc = Leaf0() #State0.attribute
         else:
-            self.attr = 1 #State1.attribute
+            self.struc = Leaf1() #State1.attribute
 
-class Two00(object):
-    one = State0()
-    two = State0()
 
+# ------------------------------
+class Item(object): #<<Space>>
+    """ Concept = Space cell """
     def __init__(self):
-        self.one = State0()
-        self.two = State0()
+        self.component = None
+        self.left =None
+        self.right = None
         
-class Two01(object):
-    one = State0()
-    two = State1()
+class Composite(Component): # <<Category>>
+    """ Concept = Composite system """
+    
+    def __init__(self, list_l):
+        # Physical space
+        self.head = None  # Concept = space base
+        self.tail = None  # Concept = second point,direction in space
+        if list_l > 0 :
+            self.head = Item()
+            item = self.head
+            for i in range(1,list_l):
+                item.right = Item()
+                item = item.right
+                #print(list_l,i)
+            self.tail = item
+            # in addition, it is necessary to make left links
+
+        # and shift_space, rotation_space, and itc. operations
+    def add(self, p):
+        self.head.component = p
+    def remove(self):
+        p = self.tail.component
+        self.tail.component = None
+        return p
+
+# The alternatives package
+class Two00(Composite): # <<System>>
 
     def __init__(self):
-        pass
-class Two10(object):
-    one = State1()
-    two = State0()
+        super().__init__(3) # run __init__ from Composite
+        self.head.component = Leaf0()
+        self.tail.component = Leaf0()
+class Two01(Composite):
+
+    def __init__(self): # <<System>>
+        super().__init__(3) # run __init__ from Composite
+        self.head.component = Leaf0()
+        self.tail.component = Leaf1()
+class Two10(Composite): # <<System>>
 
     def __init__(self):
-        pass
-class Two11(object):
-    one = State1()
-    two = State1()
+        super().__init__(3) # run __init__ from Composite
+        self.head.component = Leaf1()
+        self.tail.component = Leaf0()
+class Two11(Composite):  # <<System>>
 
     def __init__(self):
-        pass
+        super().__init__(3) # run __init__ from Composite
+        self.head.component = Leaf1()
+        self.tail.component = Leaf1()
+        
 
-class Two(Two00,Two01,Two10,Two11):
+class Mix(Two00,Two01,Two10,Two11):  # <<System>>
+    """ Concept =  Quantum system """
     # general case
     #w00 = (1.0/math.sqrt(4.0))*complex(math.cos(0.0), math.sin(0.0))
     #w01 = (1.0/math.sqrt(4.0))*complex(math.cos(0.0), math.sin(0.0))
@@ -93,58 +143,49 @@ class Two(Two00,Two01,Two10,Two11):
             t = Two10()
         else:
             t = Two11()
-        self.one = t.one
-        self.two = t.two
+        self.head = t.head.component
+        self.tail = t.tail.component
         
 PP = None  # Global variable
 
-class A(object): # Concept = Alice
+class A(Composite): # <<System>> 
+    """ Concept =  Alice """
     def __init__(self):
-        pass
+        super().__init__(1) # run __init__ from Composite
 
     def Run(self):
         global PP
-        PP = Two() # the wave function collapse
-        self.m1 = PP.one.attr  # measurement
+        PP = Mix() # the wave function collapse
+        self.m1 = PP.head.state  # measurement
         return self.m1
 
     def accept(self, _m): # accept measurement
         self.m2 = _m  
 
 
-class B(object): # Concept = Bob
+class B(Composite): # <<System>>  
+    """ Concept =  Bob """
     def __init__(self):
-        pass
+        super().__init__(1) # run __init__ from Composite
         
     def Run(self):
         # Bob
         global PP
-        self.m2 = PP.two.attr # measurement
+        self.m2 = PP.tail.state # measurement
         return self.m2
 
     def accept(self, _m): # accept measurement
         self.m1 = _m  
 
-class Cell(object):
-    def __init__(self):
-        pass
-        
-    def __init__(self):
-        self.content = None
-        self.right = None
-        self.left = None
 
 
-
-class Node(object):  # it is a classical object
-    # ! Space-Time ordering
+class Node(Composite):  #  <<System>>, it is a classical object
+    """ Concept =  Quantum entanglement experiment """
 
     def __init__(self):
-        self.space = Cell()
-        self.space.right = Cell()
-        self.space.right.right = Cell()
-        self.space.content = A()  # place of Alice
-        self.space.right.right.content = B()  # place of Bob
+        super().__init__(3) # run __init__ from Composite
+        self.head.component = A()  # place of Alice
+        self.tail.component = B()  # place of Bob
 
 
     def Run(self):  # <<Exist>>
@@ -154,16 +195,17 @@ class Node(object):  # it is a classical object
         for k in range(0,5000):
             
             # Alise 
-            m1 = self.space.content.Run()
+            m1 = self.head.component.Run()
             # Bob
-            m2 = self.space.right.right.content.Run()
+            m2 = self.tail.component.Run()
             
             # message from Alice to Bob and from Bob to Alice
-            self.space.right.content = m1
-            self.space.right.right.content.accept(self.space.right.content)
-            self.space.right.content = m2
-            self.space.content.accept(self.space.right.content)
+            self.head.right.component = m1
+            self.tail.component.accept(self.head.right.component)
+            self.head.right.component = m2
+            self.tail.component.accept(self.head.right.component)
             
+            # collection and processing of data    
             if m1 != m2:
                 confirm = confirm + 1
             else:
