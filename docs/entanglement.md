@@ -109,9 +109,10 @@ The difference between emulation and true inheritance is that the 'head' and 'ta
 We introduce the global variable PP to model quantum nonlocality.  
 Particle state measurement activities are encapsulated in classes A and B  
 ``` python
-class A(object): # <<System>>, Concept = Alice
+class A(Composite): # <<System>> 
+    """ Concept =  Alice """
     def __init__(self):
-        pass
+        super().__init__(1) # run __init__ from Composite
 
     def Run(self):
         global PP
@@ -123,9 +124,10 @@ class A(object): # <<System>>, Concept = Alice
         self.m2 = _m  
 
 
-class B(object): # <<System>>, Concept = Bob
+class B(Composite): # <<System>>  
+    """ Concept =  Bob """
     def __init__(self):
-        pass
+        super().__init__(1) # run __init__ from Composite
         
     def Run(self):
         # Bob
@@ -135,7 +137,30 @@ class B(object): # <<System>>, Concept = Bob
 
     def accept(self, _m): # accept measurement
         self.m1 = _m  
+
 ```  
+An experiment with quantum entanglement is modeled by the 'Node' class. 
+``` python
+            # Alise 
+            m1 = self.head.component.Run()
+            # Bob
+            m2 = self.tail.component.Run()
+            
+            # message from Alice to Bob and from Bob to Alice
+            self.head.right.component = m1
+            self.tail.component.accept(self.head.right.component)
+            self.head.right.component = m2
+            self.tail.component.accept(self.head.right.component)
+            
+            # collection and processing of data    
+            if m1 != m2:
+                confirm = confirm + 1
+            else:
+                nonconfirm = nonconfirm + 1
+
+```  
+The first block of code models the measurements that Alice and Bob take. The second block models the exchange of messages between Alice and Bob. The third block models the data collection and processing subsystem, which we show as an activity to simplify the code.  
+
 The message exchange order will be as follows,Fig.6.
 
 ![Image](entanglement_2.png)  
