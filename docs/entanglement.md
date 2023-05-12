@@ -169,7 +169,7 @@ Fig.6. Sequence of messages
 As soon as Alice takes a measurement for the first particle, Bob  can immediately find the state of the second particle, regardless of the distance between particles. This is possible because an instance of the \sf\bf Mix \rm class already exists.  
 The complete code is here [https://github.com/vgurianov/qm/software/entaglement.py](https://github.com/vgurianov/qm/blob/master/software/entaglement.py).  
   
-In conclusion, let's touch on one more topic. The UML2 SP language makes it possible to describe two more effects similar to quantum entanglement, but of a completely different nature.  
+In conclusion, let's touch on one more topic. The UML2 SP language makes it possible to describe two more effects similar to quantum entanglement but of a completely different nature.  
 1. Copy pointers. If we place copies of the object pointer in the extreme cells of the space, then we get the measurement correlation (or anti-correlation, if we define the get() method)
 ``` python
 head = MixOne()
@@ -192,4 +192,4 @@ count =  5000 confirm= 5000 nonconfirm= 0
 confirm =  1.0
 nonconfirm =  0.0
 ```  
-
+The fact that the UML2 SP language allows one to describe such effects does not, of course, mean that they exist in nature.
