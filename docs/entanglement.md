@@ -61,6 +61,7 @@ class MixOne(Leaf0, Leaf1):
 ```  
 Here we have a name conflict ('state' attribute and 'Run' operation). We use multiple inheritance emulation. Let's introduce the 'struc' attribute to store the object-structure. The difference between emulation and true inheritance is that the 'state' attribute is not inherited by the 'MixOne' class, but is encapsulated in a object-structure.  
 
+The complete code is here [https://github.com/vgurianov/qm/software/entaglement.py](https://github.com/vgurianov/qm/blob/master/software/entaglement.py).  
 
 Let us now consider how a composite quantum object can be created.
 Wave function as a frame net is depicted in the picture Fig.5
@@ -164,6 +165,6 @@ The first block of code models the measurements that Alice and Bob take. The sec
 The message exchange order will be as follows,Fig.6.
 
 ![Image](entanglement_2.png)  
-Fig.6. Sequence of messages  
-  
+Fig.6. Sequence of messages   
+As soon as Alice takes a measurement for the first particle, Bob  can immediately find the state of the second particle, regardless of the distance between particles. This is possible because an instance of the \sf\bf Mix \rm class already exists.  
 The complete code is here [https://github.com/vgurianov/qm/software/entaglement.py](https://github.com/vgurianov/qm/blob/master/software/entaglement.py).
