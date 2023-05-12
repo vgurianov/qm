@@ -165,7 +165,8 @@ The first block of code models the measurements that Alice and Bob take. The sec
 The message exchange order will be as follows,Fig.6.
 
 ![Image](entanglement_2.png)  
-Fig.6. Sequence of messages   
+Fig.6. Sequence of messages  
+
 As soon as Alice takes a measurement for the first particle, Bob  can immediately find the state of the second particle, regardless of the distance between particles. This is possible because an instance of the \sf\bf Mix \rm class already exists.  
 The complete code is here [https://github.com/vgurianov/qm/software/entaglement.py](https://github.com/vgurianov/qm/blob/master/software/entaglement.py).  
   
@@ -181,15 +182,15 @@ print(head.struc.state, tail.struc.state)
 head = MixOne()
 tail = MixOne()
 print(head.attr, tail.attr)
-
 ```  
 The result of the script execution  
-```
-==================== RESTART: 
+```  
+==================== RESTART:  
 State.ONE State.ONE
 State.ZERO State.ZERO
 count =  5000 confirm= 5000 nonconfirm= 0
 confirm =  1.0
 nonconfirm =  0.0
 ```  
+
 The fact that the UML2 SP language allows one to describe such effects does not, of course, mean that they exist in nature.
