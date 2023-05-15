@@ -56,7 +56,7 @@ class Class1:
         self.name = name
     def get(self):
         return self.name
-    def Run(cls):
+    def Run(self):
         pass
     
 
