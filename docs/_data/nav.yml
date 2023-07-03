@@ -35,5 +35,5 @@ toc:
         url: /qm/p.html
       - page: Complex nambers
         url: /qm/complex_numbers.html
-      - page: Metamodeling in Python
+      - page: Metaprogramming in Python
         url: /qm/sorry.html
