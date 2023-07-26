@@ -27,8 +27,8 @@ toc:
         url: /qm/sorry.html
       - page: Non-numerical models
         url: /qm/non-numerical.html
-      - page: Resume
-        url: /qm/sorry.html
+      - page: Discussion
+        url: /qm/discussion.html
   - title: Appendix
     subfolderitems:
       - page: Measurement error
