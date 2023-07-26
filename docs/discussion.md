@@ -16,9 +16,7 @@ Our ontological description of quantum effects is based on the two-mode model de
 We emphasize that many statements are in the nature of assumptions.
 
 Answers.
-1. Are there quantum objects (state vectors) between measurements
-(psi-ontic point of view)? Or the wave function only describes our knowledge
-(psy-epistemological point of view)?  
+### 1. Are there quantum objects (state vectors) between measurements (psi-ontic point of view)? Or the wave function only describes our knowledge (psy-epistemological point of view)?  
 "Quantum objects exist both before the measurement (observation) procedure and after. But before observation, these objects exist in a fundamentally different way than after the act of registration." A. Y. Sevalnikov
 "... the wave function is closely connected with the potential mode of being, objectively
 existing, although it is beyond the bounds of the manifest (“other being”,
@@ -31,13 +29,13 @@ Quantum objects (class objects) exist whether we observe them or not. The class 
 The wave function is a mathematical model of an object-class.  
 When it comes to dimensions, the constructor is called first, and then a message is sent to the instance object that simulates the dimension. The returned value will be the result of the measurement. Thus, the measurement message is a composite message.
 
-3. What are the advantages of the two-mode model of existence "potential actual" for describing quantum phenomena?
+### 2. What are the advantages of the two-mode model of existence "potential actual" for describing quantum phenomena?  
 Giving legitimacy to physical existence in a potential mode removes the ontological uncertainty around quantum paradoxes that have arisen from attempts to reconcile the properties of quantum systems with the properties of classical phenomena.
 V. E. Terekhovich  
 
 The two-mode model is a philosophical basis for choosing concepts and constructing frame networks that describe quantum effects.
 
-3. What parts of the formalism of quantum theory most adequately describe the existence of quantum objects (state vector, field operators, complex phase, possible paths in the formalism of path integrals)?  
+### 3. What parts of the formalism of quantum theory most adequately describe the existence of quantum objects (state vector, field operators, complex phase, possible paths in the formalism of path integrals)?  
 "these are the Heisenberg matrix formalism, the Schrödinger formalism associated with the concept of the wave function, and the Feynman method of path integration. In my opinion, only the first two methods are related to reality. Both the wave function and the operators have referents in being, in contrast to the concept of a path, if we consider QM, and not classical physics. "A. Y. Sevalnikov  
 The probability amplitude and its complex phase can be considered as a numerical measure of the propensity of each possible state or event of history to go into actuality. This measure does not have an independent ontological
 status that only predisposition possesses. V. E. Terekhovich  
@@ -46,7 +44,7 @@ The state vector most adequately describes the existence of quantum objects. A p
 The description of E. Schrödinger (wave function) and W. Heisenberg (transition matrix) corresponds to the assignment of attributes or operations in a package of alternatives with the same name.  
 The formalism of the Feynman integral corresponds to another way of describing the effects - the coincidence of the pattern of the "Decorator" construction.
   
-4. Does the classical world emerge from the quantum world, and if so, how?  
+### 4. Does the classical world emerge from the quantum world, and if so, how?  
 "Yes, the classical world emerges from the quantum..."
 In this danger I am in opposition to the positive attitude of many physicists, most clearly
 expressed by Feynman. He argued: "There is one world, and it is quantum!" This
@@ -67,7 +65,7 @@ Note that the solution of natural space is at the next level of abstraction, in 
 So, we assume that part of reality is outside the physical space.  
 Nevertheless, it is really worth separating the quantum world and the classical world, since the models work with class objects and instance objects.  
   
-5. In what space do state vectors exist (superposition)?  
+### 5. In what space do state vectors exist (superposition)?  
 One can imagine how space-time, while remaining a metric background for
 objects and events exclusively in the actual mode of existence, itself arises
 as a result of summing up a set of possible events (relationships, interactions),
@@ -82,7 +80,7 @@ Those. we claim that Hilbert space exists, but not in physical space.
   
 Note that pair containers are well known: they are a Map or Dictonary structure. Note that in Python, classes are also stored in Dictonary because they are called by name.    
   
-6. At what time do state vectors (superposition) exist?  
+### 6. At what time do state vectors (superposition) exist?  
 Metric time is used to synchronize events, determine their order
 and measuring the intervals between them. Development time, on the contrary, is used as a measure of the variability of complex systems (quantum, classical, biological, and others), regardless of their relative motion in space.  
 "Given the use of a two-mode model of existence, it is possible that one more aspect of time will have to be introduced. ... The time of change of the potential states themselves. V. E. Terekhovich"  
