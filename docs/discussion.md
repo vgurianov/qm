@@ -73,12 +73,12 @@ occurring in the potential mode. At the same time, the emerging actual
 space-time does not become any substance at all. V. E. Terekhovich   
   
 In our opinion, here it is necessary to talk about ways to access the object, and only then, about space.  
-Our models use a dynamic list in the Composite <<Category>> class to model the physical space. We will understand the physical space as a container for objects. To get access to an instance object, it is enough to look through all the cells of this container. In general, the physical space is a hierarchical structure that unites the own spaces of the context, system and subsystems. There is access between all elements of this structure.  
+Our models use a dynamic list in the <<Category>>Composite  class to model the physical space. We will understand the physical space as a container for objects. To get access to an instance object, it is enough to look through all the cells of this container. In general, the physical space is a hierarchical structure that unites the own spaces of the context, system and subsystems. There is access between all elements of this structure.  
 The momentum space also exists and is defined in the <<Substance>> abstract class as a dynamic list, but no longer as a container.
-The quantum object is accessed through the device (<<System>>). Double-shell experiment, Heisenberg box. Thus, we can talk about a pair of quantum object-classical object. In practice, this means that a special fixture-level attribute must be introduced containing a pointer to the mixing class. The mixing class has access to superclasses (package of alternatives), references to which are stored in a Set, possibly a List.  
+The quantum object is accessed through the device (<<System>>). Double-shell experiment, Heisenberg box. Thus, we can talk about a pair of quantum object-classical object. In practice, this means that a special fixture-level attribute must be introduced containing a pointer to the mixing class. The mixing class has access to superclasses (package of alternatives), references to which are stored in a "Set", possibly a "List".  
 Those. we claim that Hilbert space exists, but not in physical space.  
   
-Note that pair containers are well known: they are a Map or Dictonary structure. Note that in Python, classes are also stored in Dictonary because they are called by name.    
+Note that pair container are well known: they are a "Map" or "Dictonary" structure. Note that in Python, classes are also stored in "Dictonary" because they are called by name.    
   
 ### 6. At what time do state vectors (superposition) exist?  
 Metric time is used to synchronize events, determine their order
