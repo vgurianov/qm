@@ -1,18 +1,16 @@
-In the publication of [Sevalnikov A.Yu. Review of reports of the Round Table "Fundamental Problems of Modern Quantum Mechanics"](https://vox-journal.org/html/issues/480)  
+In the publication of [Sevalnikov A. Review of reports of the Round Table "Fundamental Problems of Modern Quantum Mechanics"](https://vox-journal.org/html/issues/480)  
 a group of questions related to the problem of the existence (reality) of quantum objects is considered.
 
 1. Are there quantum objects (state vectors) between measurements
 (psi-ontic point of view)? Or the wave function only describes our knowledge
 (psy-epistemological point of view)?
-2. What are the advantages of the two-mode model of existence "potential actual" for describing quantum phenomena?
-3. What parts of the formalism of quantum theory most adequately describe
-the existence of quantum objects (state vector, field operators, complex
-phase, possible paths in the formalism of path integrals)?
+2. What are the advantages of the two-modus model of existence "potential actual" for describing quantum phenomena?
+3. What parts of the formalism of quantum theory most adequately describe the existence of quantum objects (state vector, field operators, complex phase, possible paths in the formalism of path integrals)?
 4. Does the classical world emerge from the quantum world, and if so, how?
 5. In what space do state vectors exist (superposition)?
 6. At what time do state vectors (superposition) exist?
 
-Our ontological description of quantum effects is based on the two-mode model developed by A. Yu. Sevalnikov (Institute of Philosophy, Russian Academy of Sciences) and V. E. Terekhovich (St. Petersburg State University). Therefore, we will consider the listed questions in the following order: first, we will give the answer of A. Yu. Sevalnikov and V. E. Terekhovich, in the form of quotations, and then we will give a description in UML SP.
+Our ontological description of quantum effects is based on the two-modus model developed by A. Yu. Sevalnikov (Institute of Philosophy, Russian Academy of Sciences) and V. E. Terekhovich (St. Petersburg State University). Therefore, we will consider the listed questions in the following order: first, we will give the answer of A. Yu. Sevalnikov and V. E. Terekhovich, in the form of quotations, and then we will give a description in UML SP.  
 We emphasize that many statements are in the nature of assumptions.
 
 Answers.
@@ -29,7 +27,7 @@ Quantum objects (class objects) exist whether we observe them or not. The class 
 The wave function is a mathematical model of an object-class.  
 When it comes to dimensions, the constructor is called first, and then a message is sent to the instance object that simulates the dimension. The returned value will be the result of the measurement. Thus, the measurement message is a composite message.
 
-### 2. What are the advantages of the two-mode model of existence "potential actual" for describing quantum phenomena?  
+### 2. What are the advantages of the two-modus model of existence "potential actual" for describing quantum phenomena?  
 Giving legitimacy to physical existence in a potential mode removes the ontological uncertainty around quantum paradoxes that have arisen from attempts to reconcile the properties of quantum systems with the properties of classical phenomena.
 V. E. Terekhovich  
 
@@ -75,7 +73,7 @@ space-time does not become any substance at all. V. E. Terekhovich
 In our opinion, here it is necessary to talk about ways to access the object, and only then, about space.  
 Our models use a dynamic list in the <<Category>>Composite  class to model the physical space. We will understand the physical space as a container for objects. To get access to an instance object, it is enough to look through all the cells of this container. In general, the physical space is a hierarchical structure that unites the own spaces of the context, system and subsystems. There is access between all elements of this structure.  
 The momentum space also exists and is defined in the <<Substance>> abstract class as a dynamic list, but no longer as a container.
-The quantum object is accessed through the device (<<System>>). Double-shell experiment, Heisenberg box. Thus, we can talk about a pair of quantum object-classical object. In practice, this means that a special fixture-level attribute must be introduced containing a pointer to the mixing class. The mixing class has access to superclasses (package of alternatives), references to which are stored in a "Set", possibly a "List".  
+The quantum object is accessed through the device (<<System>>). Double-slit experiment, Heisenberg box. Thus, we can talk about a pair of quantum object-classical object. In practice, this means that a special fixture-level attribute must be introduced containing a pointer to the mixing class. The mixing class has access to superclasses (package of alternatives), references to which are stored in a "Set", possibly a "List".  
 Those. we claim that Hilbert space exists, but not in physical space.  
   
 Note that pair container are well known: they are a "Map" or "Dictonary" structure. Note that in Python, classes are also stored in "Dictonary" because they are called by name.    
@@ -85,5 +83,5 @@ Metric time is used to synchronize events, determine their order
 and measuring the intervals between them. Development time, on the contrary, is used as a measure of the variability of complex systems (quantum, classical, biological, and others), regardless of their relative motion in space.  
 "Given the use of a two-mode model of existence, it is possible that one more aspect of time will have to be introduced. ... The time of change of the potential states themselves. V. E. Terekhovich"  
   
-UML SP uses development time - the <<Exist>> Run() stereotype operation. This operation is performed sequentially (using the Single Threaded Execution pattern) starting from the context to atomic objects and back to the context. Metric time is used to record results, as needed.  
-In quantum models, for this purpose we introduce a class operation with the stereotype <<Exist>> cRun(), which however is called from the run time of the device evolution. That is, if class objects are outside the physical space, then time goes the same for both class objects and instance objects.  
+UML SP uses development time - the <<Exist>> Run() operation. This operation is performed sequentially (using the Single Threaded Execution pattern) starting from the context to atomic objects and back to the context. Metric time is used to record results, as needed.  
+In quantum models, for this purpose we introduce a class operation with the <<Exist>> cRun(), which however is called from the run time of the device evolution. That is, if class objects are outside the physical space, then time goes the same for both class-objects and instance-objects.  
