@@ -15,20 +15,19 @@ We emphasize that many statements are in the nature of assumptions.
 
 Answers.
 ### 1. Are there quantum objects (state vectors) between measurements (psi-ontic point of view)? Or the wave function only describes our knowledge (psy-epistemological point of view)?  
-"Quantum objects exist both before the measurement (observation) procedure and after. But before observation, these objects exist in a fundamentally different way than after the act of registration." A. Y. Sevalnikov
+"Quantum objects exist both before the measurement (observation) procedure and after. But before observation, these objects exist in a fundamentally different way than after the act of registration." A. Y. Sevalnikov  
 "... the wave function is closely connected with the potential mode of being, objectively
-existing, although it is beyond the bounds of the manifest (“other being”,
-"pregeomeotry"). "A. Yu. Sevalnikov  
+existing, although it is beyond the bounds of the manifest (“other being”,"pregeomeotry"). "A. Yu. Sevalnikov  
 "Between dimensions, quantum objects are in a potential mode of being
 in the form of a set of many possible states that are incompatible in the current
 mode." V. E. Terekhovich
   
-Quantum objects (class objects) exist whether we observe them or not. The class object (potential mode of being) spawns an instance object (actual mode of existence) after it receives the <<create>> message. The constructor call simulates the collapse of the wave function. The collapse of the wave function occurs in nature regardless of measurements.
-The wave function is a mathematical model of an object-class.  
-When it comes to dimensions, the constructor is called first, and then a message is sent to the instance object that simulates the dimension. The returned value will be the result of the measurement. Thus, the measurement message is a composite message.
+Quantum objects (class-objects) exist whether we observe them or not. The class-object (potential modus of being) spawns an instance-object (actual modus of existence) after it receives the «create» message. The constructor call simulates the collapse of the wave function. The collapse of the wave function occurs in nature regardless of measurements.
+The wave function is a mathematical model of an class-object.  
+When it comes to dimensions, the constructor is called first, and then a message that simulates the dimension is sent to the instance-object. The returned value will be the result of the measurement. Thus, the measurement is a composite message.
 
 ### 2. What are the advantages of the two-modus model of existence "potential actual" for describing quantum phenomena?  
-Giving legitimacy to physical existence in a potential mode removes the ontological uncertainty around quantum paradoxes that have arisen from attempts to reconcile the properties of quantum systems with the properties of classical phenomena.
+Giving legitimacy to physical existence in a potential modus removes the ontological uncertainty around quantum paradoxes that have arisen from attempts to reconcile the properties of quantum systems with the properties of classical phenomena.
 V. E. Terekhovich  
 
 The two-mode model is a philosophical basis for choosing concepts and constructing frame networks that describe quantum effects.
@@ -39,17 +38,18 @@ The probability amplitude and its complex phase can be considered as a numerical
 status that only predisposition possesses. V. E. Terekhovich  
   
 The state vector most adequately describes the existence of quantum objects. A package of alternatives is used to describe the basic states. Each class object in this package has attributes/operations with the same name. A mixing class (state vector) that is a descendant of all alternatives package classes (multiple inheritance) resolves name conflicts according to the "quantum rule", i.e. by means of the squared modulus of the amplitudes of the basic states.  
-The description of E. Schrödinger (wave function) and W. Heisenberg (transition matrix) corresponds to the assignment of attributes or operations in a package of alternatives with the same name.  
+The description of E. Schrödinger (wave function) corresponds attributes  with the same name in a package of alternatives.  
+The description of W. Heisenberg (transition matrix) corresponds  operations with the same name in a package of alternatives.  
 The formalism of the Feynman integral corresponds to another way of describing the effects - the coincidence of the pattern of the "Decorator" construction.
   
 ### 4. Does the classical world emerge from the quantum world, and if so, how?  
 "Yes, the classical world emerges from the quantum..."
-In this danger I am in opposition to the positive attitude of many physicists, most clearly
+In this item I am in opposition to the positive attitude of many physicists, which most clearly
 expressed by Feynman. He argued: "There is one world, and it is quantum!" This
 wrong. A. Yu. Sevalnikov  
-Perhaps the potential mode of capture is the area where something (actual) is born out of nothing. V. E. Terekhovich  
+Perhaps the potential modus of being is the area where something (actual) is born out of nothing. V. E. Terekhovich  
   
-The classical world emerges from the quantum world. Both classical and analyzed systems cover frame networks with practically the same classes. This means that classical objects also pursue classes of objects. Quantum effects appear only where there are name conflicts in multiple observations. In classical models, the collapse of the wave function is usually left behind the scenes, in the <<Context>> constructor.  
+The classical world emerges from the quantum world. Frame networks for both classical and quantum systems are very similar. The classic models do not have a package of alternatives. Quantum effects appear only where there are name conflicts in multiple inheritance. In classical models, the collapse of the wave function is usually left behind the scenes, in the <<Context>> constructor.  
   
 However, you can conduct such an experiment - take one qubit (this is a quantum system of a qubit), and then gradually put one number of qubits. The qubits themselves arise in the case of use - these are instance objects, alternatives are all blocking of instance objects. At some point, the system becomes particles of useful substances, and we must work as a class with an instance value.
 Where this border lies and what the nature of this border is is not clear.
