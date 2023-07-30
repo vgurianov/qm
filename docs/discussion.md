@@ -47,17 +47,16 @@ The formalism of the Feynman integral corresponds to another way of describing t
 In this item I am in opposition to the positive attitude of many physicists, which most clearly
 expressed by Feynman. He argued: "There is one world, and it is quantum!" This
 wrong. A. Yu. Sevalnikov  
-Perhaps the potential modus of being is the area where something (actual) is born out of nothing. V. E. Terekhovich  
+Perhaps the potential modus of existence is the area where something (actual) is born out of nothing. V. E. Terekhovich  
   
 The classical world emerges from the quantum world. Frame networks for both classical and quantum systems are very similar. The classic models do not have a package of alternatives. Quantum effects appear only where there are name conflicts in multiple inheritance. In classical models, the collapse of the wave function is usually left behind the scenes, in the <<Context>> constructor.  
   
-However, you can conduct such an experiment - take one qubit (this is a quantum system of a qubit), and then gradually put one number of qubits. The qubits themselves arise in the case of use - these are instance objects, alternatives are all blocking of instance objects. At some point, the system becomes particles of useful substances, and we must work as a class with an instance value.
-Where this border lies and what the nature of this border is is not clear.
-Note that if a system has a classical object, then all its elements are also classical objects. But if we turn into extractable from the elements, so that it becomes radioactive. This reverse transition can be modeled by reflection - class objects are always (perhaps changing), and the instance object stores a pointer to it.  
+However, you can conduct such an experiment - take one qubit (this is a quantum system of one qubit), and then gradually add qubits. The qubits themselves are instance-objects, the alternatives are combinations of an instance-object states.  At some point, the system becomes clasical object, and we must work with an instance-object. Where this border lies and what the nature of this border is is not clear.
+Note that if a system has a classical object, then all its elements are also classical objects. But if we try to extract one of the elements, it will become a quantum object.  
   
-He says that a quantum particle is located at all points of the place is impossible. We can say that a quantum particle is outside the physical space (single particles and particles of a mixture, but not in the nearest space, but a system of many atoms is already an instance object). Yes, one can agree that particles arise in space.  
+It is wrong to say that a quantum particle is located at all points in space. We can say that a quantum particle is outside the physical space. Yes, one can agree that particles arise in space.  
 Moreover, the very space for particles (systems) appears at the moment of collapse. This is because the alternative classes have <<Category>> as their superclass.  
-For example, in the experiment with entangled particles before the measurement of the space of the experimental setup, where Alice and Bob are. Once Alice makes a measurement, the system produces an instance that has its own space. Particles are localized at the extreme points of this place. There is nothing strange here, because. and in the classical case is modeled by the space of a hierarchical structure, where subsystems occupy their space.  
+Consider an experiment with entangled particles. The experimental device has its own space. Alice and Bob are in this space. Once Alice makes a measurement, the Mix class produces an instance that has its own space. Particles are localized at the extreme points of this space. There is nothing strange here, because and in the classical case is modeled by the space of a hierarchical structure, where subsystems has their space.  
 Nonlocality is modeled globally, to what is available to Alice and Bob. This point is not entirely clear - the global variable does not belong to US space either. Perhaps there are other solutions.  
 Note that the solution of natural space is at the next level of abstraction, in the Composite class (<<Category>>).
 So, we assume that part of reality is outside the physical space.  
