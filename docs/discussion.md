@@ -58,29 +58,29 @@ It is wrong to say that a quantum particle is located at all points in space. We
 Moreover, the very space for particles (systems) appears at the moment of collapse. This is because the alternative classes have <<Category>> as their superclass.  
 Consider an experiment with entangled particles. The experimental device has its own space. Alice and Bob are in this space. Once Alice makes a measurement, the Mix class produces an instance that has its own space. Particles are localized at the extreme points of this space. There is nothing strange here, because and in the classical case is modeled by the space of a hierarchical structure, where subsystems has their space.  
 Nonlocality is modeled global variable , to what is available to Alice and Bob. This point is not entirely clear - the global variable does not belong to physical space either. Perhaps there are other solutions.  
-Note that the defination of physical space is at the next level of abstraction, in the <<Category>>Composite class ().
+Note that the definiation of physical space is at the next level of abstraction, in the <<Category>>Composite class.  
 So, we assume that part of reality is outside the physical space.  
 Nevertheless, it is really worth separating the quantum world and the classical world, since the models work with class-objects and instance-objects.  
   
 ### 5. In what space do state vectors exist (superposition)?  
-One can imagine how space-time, while remaining a metric background for
-objects and events exclusively in the actual mode of existence, itself arises
+"One can imagine how space-time, while remaining a metric background for
+objects and events exclusively in the actual modus of existence, itself arises
 as a result of summing up a set of possible events (relationships, interactions),
-occurring in the potential mode. At the same time, the emerging actual
-space-time does not become any substance at all. V. E. Terekhovich   
+occurring in the potential modus. At the same time, the emerging actual
+space-time does not become any substance at all". V. E. Terekhovich   
   
 In our opinion, here it is necessary to talk about ways to access the object, and only then, about space.  
 Our models use a dynamic list in the <<Category>>Composite  class to model the physical space. We will understand the physical space as a container for objects. To get access to an instance object, it is enough to look through all the cells of this container. In general, the physical space is a hierarchical structure that unites the own spaces of the context, system and subsystems. There is access between all elements of this structure.  
 The momentum space also exists and is defined in the <<Substance>> abstract class as a dynamic list, but no longer as a container.
-The quantum object is accessed through the device (<<System>>). Double-slit experiment, Heisenberg box. Thus, we can talk about a pair of quantum object-classical object. In practice, this means that a special fixture-level attribute must be introduced containing a pointer to the mixing class. The mixing class has access to superclasses (package of alternatives), references to which are stored in a "Set", possibly a "List".  
-Those. we claim that Hilbert space exists, but not in physical space.  
+The quantum object is accessed through the device (<<System>>). Example, Double-slit experiment, Heisenberg box. Thus, we can talk about a pair of quantum object-classical object. In practice, this means that a special fixture-level attribute must be introduced containing a pointer to the mixing class. The mixing class has access to superclasses (package of alternatives), references to which are stored in a "Set", possibly a "List".  
+Those, we claim that Hilbert space exists, but not in physical space.  
   
-Note that pair container are well known: they are a "Map" or "Dictonary" structure. Note that in Python, classes are also stored in "Dictonary" because they are called by name.    
+Note that  container of pairs are well known: they are a "Map" or "Dictionary" structure. Note that in Python, classes are also stored in "Dictionary" because they are called by name.    
   
 ### 6. At what time do state vectors (superposition) exist?  
 Metric time is used to synchronize events, determine their order
 and measuring the intervals between them. Development time, on the contrary, is used as a measure of the variability of complex systems (quantum, classical, biological, and others), regardless of their relative motion in space.  
-"Given the use of a two-mode model of existence, it is possible that one more aspect of time will have to be introduced. ... The time of change of the potential states themselves. V. E. Terekhovich"  
+"Given the use of a two-modus model of existence, it is possible that one more aspect of time will have to be introduced. ... The time of change of the potential states themselves". V. E. Terekhovich  
   
 UML SP uses development time - the <<Exist>> Run() operation. This operation is performed sequentially (using the Single Threaded Execution pattern) starting from the context to atomic objects and back to the context. Metric time is used to record results, as needed.  
 In quantum models, for this purpose we introduce a class operation with the <<Exist>> cRun(), which however is called from the run time of the device evolution. That is, if class objects are outside the physical space, then time goes the same for both class-objects and instance-objects.  
