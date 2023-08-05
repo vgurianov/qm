@@ -8,9 +8,9 @@ a group of questions related to the problem of the existence (reality) of quantu
 3. What parts of the formalism of quantum theory most adequately describe the existence of quantum objects (state vector, field operators, complex phase, possible paths in the formalism of path integrals)?
 4. Does the classical world emerge from the quantum world, and if so, how?
 5. In what space do state vectors exist (superposition)?
-6. At what time do state vectors (superposition) exist?
+6. Is there a special time for state vectors (superpositions)?
 
-Our ontological description of quantum effects is based on the two-modus model developed by A. Yu. Sevalnikov (Institute of Philosophy, Russian Academy of Sciences) and V. E. Terekhovich (St. Petersburg State University). Therefore, we will consider the listed questions in the following order: first, we will give the answer of A. Yu. Sevalnikov and V. E. Terekhovich, in the form of quotations, and then we will give a description in UML SP.  
+Our ontological description of quantum effects is based on the two-modus model developed by A. Yu. Sevalnikov. Therefore, we will consider the listed questions in the following order: first, we will give the answer of A. Yu. Sevalnikov (Institute of Philosophy, Russian Academy of Sciences) and V. E. Terekhovich (St. Petersburg State University), in the form of quotations, and then we will give a description in UML SP.  
 We emphasize that many statements are in the nature of assumptions.
 
 Answers.
@@ -77,7 +77,7 @@ Those, we claim that Hilbert space exists, but not in physical space.
   
 Note that  container of pairs are well known: they are a "Map" or "Dictionary" structure. Note that in Python, classes are also stored in "Dictionary" because they are called by name.    
   
-### 6. At what time do state vectors (superposition) exist?  
+### 6.Is there a special time for state vectors (superpositions)?  
 Metric time is used to synchronize events, determine their order
 and measuring the intervals between them. Development time, on the contrary, is used as a measure of the variability of complex systems (quantum, classical, biological, and others), regardless of their relative motion in space.  
 "Given the use of a two-modus model of existence, it is possible that one more aspect of time will have to be introduced. ... The time of change of the potential states themselves". V. E. Terekhovich  
