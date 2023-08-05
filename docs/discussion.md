@@ -33,14 +33,15 @@ V. E. Terekhovich
 The two-modus model is a philosophical basis for choosing concepts and constructing frame networks that describe quantum effects.
 
 ### 3. What parts of the formalism of quantum theory most adequately describe the existence of quantum objects (state vector, field operators, complex phase, possible paths in the formalism of path integrals)?  
-"these are the Heisenberg matrix formalism, the Schrödinger formalism associated with the concept of the wave function, and the Feynman method of path integration. In my opinion, only the first two methods are related to reality. Both the wave function and the operators have referents in being, in contrast to the concept of a path, if we consider QM, and not classical physics. "A. Y. Sevalnikov  
-The probability amplitude and its complex phase can be considered as a numerical measure of the propensity of each possible state or event of history to go into actuality. This measure does not have an independent ontological
-status that only predisposition possesses. V. E. Terekhovich  
+"these are the Heisenberg matrix formalism, the Schrödinger formalism associated with the concept of the wave function, and the Feynman method of path integration. In my opinion, only the first two methods are related to reality. Both the wave function and the operators have referents in being, in contrast to the concept of a path, if we consider QM, and not classical physics. " A. Y. Sevalnikov  
+"The probability amplitude and its complex phase can be considered as a numerical measure of the propensity of each possible state or event of history to go into actuality. This measure does not have an independent ontological
+status that only predisposition possesses". V. E. Terekhovich  
   
 The state vector most adequately describes the existence of quantum objects. A package of alternatives is used to describe the basic states. Each class object in this package has attributes/operations with the same name. A mixing class (state vector) that is a descendant of all alternatives package classes (multiple inheritance) resolves name conflicts according to the "quantum rule", i.e. by means of the squared modulus of the amplitudes of the basic states.  
 The description of E. Schrödinger (wave function) corresponds attributes  with the same name in a package of alternatives.  
 The description of W. Heisenberg (transition matrix) corresponds  operations with the same name in a package of alternatives.  
-The formalism of the Feynman integral corresponds to another way of describing the effects - the coincidence of the pattern of the "Decorator" construction.
+The Feynman integral formalism corresponds to another way of describing quantum effects - using the "Decorator" design pattern.  
+
   
 ### 4. Does the classical world emerge from the quantum world, and if so, how?  
 "Yes, the classical world emerges from the quantum..."
@@ -56,10 +57,11 @@ However, you can conduct such an experiment - take one qubit (this is a quantum 
 Note that if a system is a classical object, then all its elements are also classical objects. But if we try to extract one of the elements, it will become a quantum object.  
   
 It is wrong to say that a quantum particle is located at all points in space. We can say that a quantum particle is outside the physical space. Yes, one can agree that particles arise in space.  
-Moreover, the very space for particles (systems) appears at the moment of collapse. This is because the alternative classes have <<Category>> as their superclass.  
+Moreover, the very space for particles (subsystems) appears at the moment of collapse. This is because the alternative classes have <<Category>> as their superclass.  
 Consider an experiment with entangled particles. The experimental device has its own space. Alice and Bob are in this space. Once Alice makes a measurement, the Mix class produces an instance that has its own space. Particles are localized at the extreme points of this space. There is nothing strange here, because and in the classical case is modeled by the space of a hierarchical structure, where subsystems has their space.  
 Nonlocality is modeled global variable , to what is available to Alice and Bob. This point is not entirely clear - the global variable does not belong to physical space either. Perhaps there are other solutions.  
-Note that the definiation of physical space is at the next level of abstraction, in the <<Category>>Composite class.  
+Note that the definiation of physical space is at the next level of abstraction, in the <<Category>> Composite class.  
+  
 So, we assume that part of reality is outside the physical space.  
 Nevertheless, it is really worth separating the quantum world and the classical world, since the models work with class-objects and instance-objects.  
   
@@ -71,9 +73,9 @@ occurring in the potential modus. At the same time, the emerging actual
 space-time does not become any substance at all". V. E. Terekhovich   
   
 In our opinion, here it is necessary to talk about ways to access the object, and only then, about space.  
-Our models use a dynamic list in the <<Category>>Composite  class to model the physical space. We will understand the physical space as a container for objects. To get access to an instance object, it is enough to look through all the cells of this container. In general, the physical space is a hierarchical structure that unites the own spaces of the context, system and subsystems. There is access between all elements of this structure.  
+Our models use a dynamic list in the <<Category>> Composite  class to model the physical space. We will understand the physical space as a container for objects. To get access to an instance object, it is enough to look through all the cells of this container. In general, the physical space is a hierarchical structure that unites the own spaces of the context, system and subsystems. There is access between all elements of this structure.  
 The momentum space also exists and is defined in the <<Substance>> abstract class as a dynamic list, but no longer as a container.
-The quantum object is accessed through the device (<<System>>). Example, Double-slit experiment, Heisenberg box. Thus, we can talk about a pair of quantum object-classical object. In practice, this means that a special fixture-level attribute must be introduced containing a pointer to the mixing class. The mixing class has access to superclasses (package of alternatives), references to which are stored in a "Set", possibly a "List".  
+The quantum object is accessed through the device (<<System>>). Examples: Double-slit experiment, Heisenberg box. Thus, we can talk about a pair of "quantum object-classical object". In practice, this means that a special fixture-level attribute must be introduced containing a pointer to the mixing class. The mixing class has access to superclasses (package of alternatives), references to which are stored in a "Set", possibly a "List".  
 Those, we claim that Hilbert space exists, but not in physical space.  
   
 Note that  container of pairs are well known: they are a "Map" or "Dictionary" structure. Note that in Python, classes are also stored in "Dictionary" because they are called by name.    
