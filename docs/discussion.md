@@ -87,3 +87,13 @@ and measuring the intervals between them. Development time, on the contrary, is 
   
 UML SP uses development time - the <<Exist>> Run() operation. This operation is performed sequentially (using the Single Threaded Execution pattern) starting from the context to atomic objects and back to the context. Metric time is used to record results, as needed.  
 In quantum models, for this purpose we introduce a class operation with the <<Exist>> cRun(), which however is called from the run time of the device evolution. That is, if class objects are outside the physical space, then time goes the same for both class-objects and instance-objects.  
+
+
+## Summarize
+If we accept a two-modus model of reality, then the structure of reality is as follows.  
+  
+The quantum world consists of objects-classes (potential mode of being) and relations between them (superposition). Class objects are in Hilbert space. This part of reality is outside the physical space. The classical world has an access point to the quantum world (perhaps it is a variable or <<System>> attribute that stores a pointer to the mixing class). The classical world consists of object-instances (actual mode of existence), they are located in the physical space. Both worlds develop synchronously according to the equations of quantum and classical mechanics. For class-objects, the <<Exist>> cRun() operation is performed, for instance-objects, the <<Exist>> Run() operation is performed.  
+The classical world affects the quantum world, changes in the classical world lead to changes in the amplitude of the alternatives.
+The influence of the classical world can cause the collapse of the wave function of a quantum system and the appearance of this system in physical space. This is modeled by the <<create>> operation and the creation of an instance object. This is how the quantum world manifests itself in the classical world.  
+  
+General methodological note. In our opinion, to define a scientific model, it is not enough to formulate a mathematical model. A mandatory part of the model should be a conceptual model formulated in the form of a frame network and defining the ontology of this model. The mathematical model should be built on this conceptual model.  
