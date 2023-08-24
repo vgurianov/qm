@@ -30,7 +30,7 @@ When it comes to dimensions, the constructor is called first, and then a message
 Giving legitimacy to physical existence in a potential modus removes the ontological uncertainty around quantum paradoxes that have arisen from attempts to reconcile the properties of quantum systems with the properties of classical phenomena.
 V. E. Terekhovich  
 
-The two-modus model is a philosophical basis for choosing concepts and constructing frame networks that describe quantum effects.
+The two-modus model is best suited for the ontological (frame) description of quantum effects. The two-modus model is a philosophical basis for choosing concepts and constructing frame networks that describe quantum effects.
 
 ### 3. What parts of the formalism of quantum theory most adequately describe the existence of quantum objects (state vector, field operators, complex phase, possible paths in the formalism of path integrals)?  
 "these are the Heisenberg matrix formalism, the Schrödinger formalism associated with the concept of the wave function, and the Feynman method of path integration. In my opinion, only the first two methods are related to reality. Both the wave function and the operators have referents in being, in contrast to the concept of a path, if we consider QM, and not classical physics. " A. Y. Sevalnikov  
