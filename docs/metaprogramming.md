@@ -1,3 +1,4 @@
+``` python
 class Dog:
 
     # data attribute (class variable),
@@ -8,7 +9,9 @@ class Dog:
         # class instance variable
         # unique for each instance
         self.name = name
-
+```
+The rezult is  
+```  
 >>> d = Dog('Fido')
 >>> e = Dog('Buddy')
 
@@ -25,3 +28,4 @@ class Dog:
 # 'Fido'
 >>> e.name    
 # 'Buddy'
+```
