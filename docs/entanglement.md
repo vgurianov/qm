@@ -199,4 +199,61 @@ State.ONE State.ONE
 State.ZERO State.ZERO
 ```  
 
-The fact that the UML2 SP language allows one to describe such effects does not, of course, mean that they exist in nature.
+The fact that the UML2 SP language allows one to describe such effects does not, of course, mean that they exist in nature.  
+
+Class attributes can be used to model nonlocality.  
+``` python
+class Cell(object):
+    def __init__(self):
+        pass
+        
+    def __init__(self):
+        self.content = None
+        self.right = None
+        self.left = None
+
+space = Cell()
+space.right = Cell()
+space.right.right = Cell()
+
+
+class Composite(): # <<Category>>
+    """ Concept = Composite system """
+
+    head = space
+    tail = space.right.right
+    def __init__(self, list_l):
+        pass
+    
+
+class Two01(Composite): # <<System>>
+
+    def __init__(self):
+        #super().__init__(3) # run __init__ from Composite
+        self.head.content = 0
+        self.tail.content = 1
+
+class A(Composite): # <<System>> 
+    """ Concept =  Alice """
+    def __init__(self):
+        pass
+class B(Composite): # <<System>> 
+    """ Concept =  Bob """
+    def __init__(self):
+        pass
+
+# ------------
+qs = Two01()
+cs = A()
+print(qs.head.content, cs.head.content)
+cs = B()
+print(qs.tail.content, cs.tail.content)
+```
+The result is  
+```  
+====================== RESTART: 
+0 0
+1 1
+```
+In our opinion, this hypothesis seems more plausible than the hypothesis with a global variable.  
+
