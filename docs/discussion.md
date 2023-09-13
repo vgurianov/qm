@@ -13,7 +13,7 @@ a group of questions related to the problem of the existence (reality) of quantu
 Our ontological description of quantum effects is based on the two-modus model developed by A. Yu. Sevalnikov. Therefore, we will consider the listed questions in the following order: first, we will give the answer of A. Yu. Sevalnikov (Institute of Philosophy, Russian Academy of Sciences) and V. E. Terekhovich (St. Petersburg State University), in the form of quotations, and then we will give a description in UML SP.  
 We emphasize that many statements are in the nature of assumptions.
 
-Answers.
+## Answers.
 ### 1. Are there quantum objects (state vectors) between measurements (psi-ontic point of view)? Or the wave function only describes our knowledge (psy-epistemological point of view)?  
 "Quantum objects exist both before the measurement (observation) procedure and after. But before observation, these objects exist in a fundamentally different way than after the act of registration." A. Y. Sevalnikov  
 "... the wave function is closely connected with the potential mode of being, objectively
@@ -98,4 +98,4 @@ The classical world consists of object-instances (actual mode of existence), the
 The classical world affects the quantum world, changes in the classical world lead to changes in the amplitude of the alternatives.
 The influence of the classical world can cause the collapse of the wave function of a quantum system and the appearance of this system in physical space. This is modeled by the <<create>> operation and the creation of an instance object. This is how the quantum world manifests itself in the classical world.  
   
-General methodological note. In our opinion, to define a scientific model, it is not enough to formulate a mathematical model. A mandatory part of the model should be a conceptual model formulated in the form of a frame network and defining the ontology of this model. The mathematical model should be built on this conceptual model.  
+General methodological note. In our opinion, to define a scientific model, it is not enough to formulate a mathematical model. A mandatory part of the model should be a conceptual model formulated in the form of a frame network and defining the ontology of this model. The mathematical model should be built on this conceptual model. If a mathematical model is built on the basis of a class diagram, then it will be a quantum theory. If a mathematical model is built on the basis of a communication diagram, then it will be a classical theory.  
