@@ -66,6 +66,8 @@ At any time during execution, there are at least three nested scopes whose names
 
 1. The innermost region, which is searched first, contains local names. The scope of any nested function whose search begins with the nearest enclosing scope contains nonlocal names, but also nonglobal names.  
 2. The next area after the last one contains the global names of the current module.  
-3. The outermost scope (last lookup) is the namespace containing the built-in names.  
+3. The outermost scope (last lookup) is the namespace containing the built-in names.
+
+   
 If the variable name is declared global, then all references and assignments go directly to the middle area, containing the global names of the module. If the variables are not local, then these variables are read-only. Attempting to write to such a variable will simply create a new local variable in the innermost scope, leaving the outer variable with the same name unchanged.
 
