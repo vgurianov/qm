@@ -69,6 +69,9 @@ Wave function as a frame net is depicted in the picture Fig.5
 ![Image](entanglement_1.png)
 Fig.5. The entanglement wave function
 
+```
+Note: This diagram is in a simplified form. In general systems theory, this method is called the enlargement method or the coarsening method. This simplification allows you to focus on essential relationships and hides unimportant details.
+```
 Let us compose the base states as possible alternatives. To create basic states, let's place the particles in the extreme cells of space. For example, the base state $$|01\rangle$$ would be defined by the following code  
 ``` python
 class Two01(Composite):
