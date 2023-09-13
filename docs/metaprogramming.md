@@ -58,7 +58,7 @@ The rezult is
 ('instance method called', <__main__.MyClass object at 0x000001F13D0E7070>, 1)
 
 ```  
-Instance methods can also access the class itself through the self.__class__ attribute.  
+Instance methods can also access the class itself through the `self.__class__` attribute.  
 
 ## 3. Scope  
 
