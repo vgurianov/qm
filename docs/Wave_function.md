@@ -25,7 +25,9 @@ Figure 2: The wavefunction collapse
 The measurement results upon collapse of the wave function can vary, but the outcome after collapse will remain the same. If we were to repeat the measurement, we would obtain the same value every time for the measured property.  
 
 Is it possible to observe objects-class ?  
-In our opinion, yes. Really.  
+In our opinion, yes.    
+If we consider simulation models of non-quantum systems, then in all cases ontology classes are ideal entities. For example, in the pendulum clock simulation there is a class that models the clock itself. However, a real  clock is a mechanical system assembled from parts. In turn, every detail has its own story. We abstract away from all this by introducing a class that models a clock. Thus, we introduce the ideal essence that exists in our imagination. However, this is not the case with quantum mechanics. In our opinion, classes in this case are real physical objects.  
+Really. Hacking proposed the following criterion for the reality of a quantum object [9]. If manipulations with the wave function affect other observable objects, it may well be recognized as real, since it is the cause of the observed phenomena.  
 We observe objects-instance  because every classical object has at least three methods: set() for assigning a value to an attribute (impact), get() for getting an attribute value (measurement), and Run() for changing state over time.
 Object-class must also have the same methods. But only now it will be the attributes and methods of the class. Their purpose is exactly the same. The Ran() class method is necessary for the wave function to obey the time-dependent Schrödinger equation.  
 Let us explain this with a well-known example. Let particles with spin 1/2 fall into the Stern-Gerlach device. In this case, we will have two streams of particles with a spin projection of +1/2 and -1/2. This situation is modeled by the set() message . If we put the second Stern-Gerlach device in the path of one of the beams, then only one detector (+1/2 or -1/2) will always work. This situation is modeled by the get() message. Here we ask the question "Does the particle have a spin of +1/2 (-1/2)?" And we get the answer in the form of Yes / No.  
@@ -96,4 +98,5 @@ https://doi.org/10.48550/arXiv.1405.1548
 6. Feynman R, Leighton R, and Sands M. The Feynman Lectures on Physics, Volume 3: Quantum mechanics. NEW MILLENNIUM EDITION
 7. Penrose R.: The Road to Reality: A Complete Guide to the Laws of the Universe, 	Jonathan Cape, 2004 %(Entangled P.582, EPR P.585)
 8. D'Espagnat B. (1979): The Quantum Theory and Reality, Scientific American: 241 (5): 158–181, Available from: http://www.sciam.com/media/pdf/197911\_0158.pdf
+9. Representing and Intervening: Introductory Topics in the Philosophy of Natural Science. By Ian Hacking. Cambridge: Cambridge University Press, 1983.
 
